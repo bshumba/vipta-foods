@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\SitemapController;
 use Illuminate\Support\Facades\Route;
 
 Route::view('/', 'pages.home')->name('home');
@@ -14,14 +15,4 @@ Route::view('/impact', 'pages.impact')->name('impact');
 
 Route::view('/contact', 'pages.contact')->name('contact');
 
-Route::get('/sitemap.xml', function () {
-    $routes = collect(config('vipta.navigation', []))
-        ->pluck('route')
-        ->prepend('home')
-        ->unique()
-        ->values();
-
-    return response()
-        ->view('sitemap', ['routes' => $routes])
-        ->header('Content-Type', 'application/xml');
-})->name('sitemap');
+Route::get('/sitemap.xml', SitemapController::class)->name('sitemap');
