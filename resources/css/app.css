@@ -1,0 +1,40 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+
+@theme {
+    --font-display: 'Playfair Display', ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;
+    --font-sans: 'Hanken Grotesk', 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+        'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+
+    --color-vipta-cream: #f8faf3;
+    --color-vipta-paper: #fffdf7;
+    --color-vipta-sage: #eef2e8;
+    --color-vipta-sage-deep: #dfe5d9;
+    --color-vipta-green: #145225;
+    --color-vipta-leaf: #2f6b3b;
+    --color-vipta-gold: #c7a347;
+    --color-vipta-earth: #5a4400;
+    --color-vipta-ink: #191d18;
+    --color-vipta-muted: #4c554a;
+    --color-vipta-border: #d8dfd1;
+
+    --shadow-vipta-soft: 0 18px 45px rgb(20 82 37 / 0.11);
+}
+
+@layer base {
+    [x-cloak] {
+        display: none !important;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        background: var(--color-vipta-cream);
+        color: var(--color-vipta-ink);
+        font-family: var(--font-sans);
+    }
+}

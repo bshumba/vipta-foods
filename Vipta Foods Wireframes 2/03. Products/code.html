@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Vipta Foods - Miracle Breakfast Cookie</title>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;700&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary": "#145225",
+                    "on-error-container": "#93000a",
+                    "surface-bright": "#f8faf3",
+                    "on-tertiary-fixed": "#251a00",
+                    "on-tertiary": "#ffffff",
+                    "background": "#f8faf3",
+                    "on-tertiary-container": "#fdd573",
+                    "secondary-container": "#b2f3ab",
+                    "on-primary": "#ffffff",
+                    "inverse-surface": "#2e312d",
+                    "on-tertiary-fixed-variant": "#5a4400",
+                    "surface-container": "#ecefe8",
+                    "surface-container-high": "#e6e9e2",
+                    "on-secondary-container": "#377137",
+                    "primary-fixed": "#b1f2b5",
+                    "on-secondary": "#ffffff",
+                    "tertiary-fixed": "#ffdf96",
+                    "tertiary-container": "#775b00",
+                    "surface-container-highest": "#e1e3dc",
+                    "outline-variant": "#c0c9bd",
+                    "inverse-primary": "#96d69b",
+                    "primary-fixed-dim": "#96d69b",
+                    "on-secondary-fixed": "#002204",
+                    "on-error": "#ffffff",
+                    "surface-container-low": "#f2f4ed",
+                    "on-primary-fixed-variant": "#135225",
+                    "on-background": "#191d18",
+                    "on-primary-container": "#a8e9ad",
+                    "tertiary": "#5a4400",
+                    "secondary": "#306a31",
+                    "tertiary-fixed-dim": "#e9c262",
+                    "surface-container-lowest": "#ffffff",
+                    "on-surface-variant": "#414940",
+                    "inverse-on-surface": "#eff2eb",
+                    "surface-tint": "#2e6a3a",
+                    "error-container": "#ffdad6",
+                    "secondary-fixed": "#b2f3ab",
+                    "on-secondary-fixed-variant": "#16521c",
+                    "surface-variant": "#e1e3dc",
+                    "surface-dim": "#d8dbd4",
+                    "on-surface": "#191d18",
+                    "secondary-fixed-dim": "#97d691",
+                    "surface": "#f8faf3",
+                    "outline": "#71796f",
+                    "on-primary-fixed": "#002109",
+                    "error": "#ba1a1a",
+                    "primary-container": "#2f6b3b"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-mobile": "20px",
+                    "stack-md": "48px",
+                    "unit": "8px",
+                    "gutter": "24px",
+                    "margin-desktop": "64px",
+                    "stack-lg": "80px",
+                    "container-max": "1280px"
+            },
+            "fontFamily": {
+                    "display-lg-mobile": [
+                            "Playfair Display"
+                    ],
+                    "display-lg": [
+                            "Playfair Display"
+                    ],
+                    "headline-lg": [
+                            "Playfair Display"
+                    ],
+                    "headline-md": [
+                            "Playfair Display"
+                    ],
+                    "quote": [
+                            "Playfair Display"
+                    ],
+                    "body-lg": [
+                            "Hanken Grotesk"
+                    ],
+                    "headline-lg-mobile": [
+                            "Playfair Display"
+                    ],
+                    "body-md": [
+                            "Hanken Grotesk"
+                    ],
+                    "label-caps": [
+                            "Hanken Grotesk"
+                    ]
+            },
+            "fontSize": {
+                    "display-lg-mobile": [
+                            "40px",
+                            {
+                                    "lineHeight": "48px",
+                                    "letterSpacing": "-0.01em",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "display-lg": [
+                            "64px",
+                            {
+                                    "lineHeight": "72px",
+                                    "letterSpacing": "-0.02em",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "headline-lg": [
+                            "40px",
+                            {
+                                    "lineHeight": "48px",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "headline-md": [
+                            "28px",
+                            {
+                                    "lineHeight": "36px",
+                                    "fontWeight": "500"
+                            }
+                    ],
+                    "quote": [
+                            "24px",
+                            {
+                                    "lineHeight": "34px",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "body-lg": [
+                            "18px",
+                            {
+                                    "lineHeight": "28px",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "headline-lg-mobile": [
+                            "32px",
+                            {
+                                    "lineHeight": "38px",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "body-md": [
+                            "16px",
+                            {
+                                    "lineHeight": "24px",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "label-caps": [
+                            "12px",
+                            {
+                                    "lineHeight": "16px",
+                                    "letterSpacing": "0.1em",
+                                    "fontWeight": "700"
+                            }
+                    ]
+            }
+    },
+        },
+      }
+    </script>
+<style>
+        .premium-card-hover {
+            transition: all 0.4s ease;
+        }
+        .premium-card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px -15px rgba(20, 82, 37, 0.15);
+        }
+        .minimal-input {
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid theme('colors.primary');
+            transition: all 0.3s ease;
+        }
+        .minimal-input:focus {
+            outline: none;
+            border-bottom-width: 2px;
+            box-shadow: none;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased pt-20">
+<nav class="bg-surface/90 dark:bg-surface-dim/90 backdrop-blur-md fixed top-0 w-full z-50 border-b border-outline-variant/30 transition-all ease-in-out duration-300">
+<div class="flex justify-between items-center h-20 max-w-container-max mx-auto px-margin-desktop">
+<a class="font-display-lg text-headline-md font-bold text-primary dark:text-primary-fixed" href="#">Vipta Foods</a>
+<div class="hidden md:flex items-center space-x-gutter">
+<a class="font-body-md text-body-md uppercase tracking-wider text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors hover:text-primary dark:hover:text-primary-fixed duration-300" href="#">Home</a>
+<a class="font-body-md text-body-md uppercase tracking-wider text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors hover:text-primary dark:hover:text-primary-fixed duration-300" href="#">About</a>
+<a class="font-body-md text-body-md uppercase tracking-wider text-primary dark:text-primary-fixed border-b-2 border-primary pb-1 font-bold hover:text-primary dark:hover:text-primary-fixed duration-300" href="#">Products</a>
+<a class="font-body-md text-body-md uppercase tracking-wider text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors hover:text-primary dark:hover:text-primary-fixed duration-300" href="#">Our Story</a>
+<a class="font-body-md text-body-md uppercase tracking-wider text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors hover:text-primary dark:hover:text-primary-fixed duration-300" href="#">Impact</a>
+<a class="font-body-md text-body-md uppercase tracking-wider text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors hover:text-primary dark:hover:text-primary-fixed duration-300" href="#">Contact</a>
+</div>
+<button class="hidden md:inline-flex items-center justify-center px-6 py-3 bg-primary text-on-primary rounded-lg font-body-md text-body-md hover:border hover:border-tertiary-container transition-all">
+                Connect
+            </button>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<main>
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-stack-lg min-h-[819px] flex flex-col md:flex-row items-center gap-stack-md">
+<div class="w-full md:w-5/12 space-y-6">
+<span class="font-label-caps text-label-caps text-tertiary tracking-[0.1em] uppercase">The Modern Alchemist</span>
+<h1 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-primary leading-tight">
+                    Engineering Health,<br/>Honoring Heritage.
+                </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-md">
+                    The Miracle Breakfast Cookie. A precise synthesis of high-end nutritional science and pure, indigenous Zimbabwean botanicals. Formulated for sustained energy and cognitive clarity.
+                </p>
+<div class="pt-4 flex gap-4">
+<button class="px-8 py-4 bg-primary text-on-primary rounded-lg font-body-md text-body-md hover:ring-1 hover:ring-tertiary-container transition-all">
+                        Enquire Now
+                    </button>
+<button class="px-8 py-4 bg-transparent border border-primary text-primary rounded-lg font-body-md text-body-md hover:bg-surface-container transition-all">
+                        Clinical Data
+                    </button>
+</div>
+</div>
+<div class="w-full md:w-7/12 h-[600px] relative rounded-xl overflow-hidden shadow-lg">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="A highly detailed, editorial-style photograph of a premium, artisanal breakfast cookie resting on a pristine, softly textured light sage ceramic plate. The lighting is high-key and sophisticated, casting soft, diffused shadows typical of luxury food magazines. In the blurred background, subtle hints of laboratory glassware and natural botanical elements hint at the 'Modern Alchemist' brand identity. The color palette emphasizes warm whites, deep primary greens, and subtle earthy browns." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeUFB7oegg7U1cY__r4BzQImt6Sb6NU-0fGD9E_fCpSDAVnkHn-nofxRe3FuFhHKfcJVduCLMHIsE5MQ0KAmP2KEnGgVaxaq0Zj1J02Oih_lsFd9kElEv9_P72lrWSJPex-DuDAudEfO75KdoYiJzlXsVwfTJn_TrnVvLV2FvmLE2k1hXkARe9HIMdi3V2957Dm4sUhB8DDcz8Q-3LejEx9rYfffcIuHUivJdmMoFvAttMwq4jGCdSxM63I8W8uBl-ExMHUwVyb-c"/>
+</div>
+</section>
+<section class="bg-surface-container-low py-stack-lg">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="text-center mb-stack-md">
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-primary">Raw Botanicals, Refined</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-4 max-w-2xl mx-auto">
+                        We source resilient, nutrient-dense fruits native to Zimbabwe, applying rigorous extraction protocols to preserve their bio-active compounds.
+                    </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<article class="bg-surface rounded-xl overflow-hidden border border-outline-variant/30 premium-card-hover flex flex-col h-[500px]">
+<div class="h-[70%] w-full relative">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="A striking macro photograph of the Matohwe fruit, cut open to reveal its internal structure. The lighting is dramatic yet clean, highlighting the textures and vibrant natural colors against a minimalist warm white background. The composition is asymmetrical and modern, evoking a high-end botanical encyclopedia." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVYFlKR7VKaG2LmgAL0GBiVHIlklAcElRmbgddEUY0dcsu5oBSFhrZ43pZlWCi2hGwrkwLDe9If8H2qksks56WsSi7AFdYIBKje6vBcKVCJADz_SCJLmDhFvfUjwmg3v_I4jeTV7HUqZXS9tzVU2cYWRFNfq9Gus4RuowI0ycDCXB567RGDTvQayGvBiKHKhnCJeWq0dUJreLKq9VOtB1wSu5qFYJnkoPGAwEdX6goPaRfRhzH93IJhpIShU0ePO-phszeSn0k0Hg"/>
+</div>
+<div class="h-[30%] p-6 flex flex-col justify-center bg-surface">
+<span class="font-label-caps text-label-caps text-tertiary-container uppercase mb-2">Cognitive Function</span>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Matohwe</h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">Rich in neuro-protective antioxidants, processed via cold-extraction to maintain efficacy.</p>
+</div>
+</article>
+<article class="bg-surface rounded-xl overflow-hidden border border-outline-variant/30 premium-card-hover flex flex-col h-[500px]">
+<div class="h-[70%] w-full relative">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="An elegant still life of Mazhanje fruit arranged perfectly on a brushed metal surface. The lighting is soft and directional, creating a tactile feel. The image has a clean, scientific aesthetic mixed with natural beauty, utilizing deep greens and organic golden hues." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLaSC-39OVNwFDkuCdnpFvaSnUKyll4a9gEvIy2bVQjFEDVul2qy4h5kOhZ7bT5jHINl04lNUpoL7oAHfxGD4pgXvwQ8SHf6Xo9SNk8aHl59MuA1UwZUzRddKOMXJzzXewGafAoveDxjfq9vXKtqTBpFCFdT6YXtwL0Eg6pZrW0UvsPrXQB9w-YyYOGozyRwWPvACUrt1P_1kVYFOzMQREPIhgGPYa9L1dEZqbDjIog-qnmFRr6pB8xBnw0I8i1nfA3tcNc5svBCg"/>
+</div>
+<div class="h-[30%] p-6 flex flex-col justify-center bg-surface">
+<span class="font-label-caps text-label-caps text-tertiary-container uppercase mb-2">Sustained Energy</span>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Mazhanje</h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">Complex carbohydrates and essential minerals providing a non-glycemic energy matrix.</p>
+</div>
+</article>
+<article class="bg-surface rounded-xl overflow-hidden border border-outline-variant/30 premium-card-hover flex flex-col h-[500px]">
+<div class="h-[70%] w-full relative">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="A high-contrast, editorial close-up of dark Tsubvu berries. The berries are resting on a piece of slate, with soft, diffused white light illuminating their glossy texture. The minimal setting and sharp focus emphasize the premium, concentrated nature of the ingredient." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIprfEXeakD6LTeFfnulyyUBi45kwg2XAHl9D2_pU3yh9cqpH4p1pRuY8JsEnVQMt9Wip2CABmAhXUDutUP6JwUE0qCezi5cnfz5VBsQawWfQSrrAGTvah-VYX-jqenQ1sVQTYbPbxslnaEoKZsOhoPv1FjAzSImwTieuf8yr4-EuRKFo1u3Yh_rc0VNR_eSXG_Wp9aRXGe53Bom33eKKLS4GtycY1-sv42vXfWoC3UUm3GiDntSYbzijNcmUs5_AGfekk8gHci7c"/>
+</div>
+<div class="h-[30%] p-6 flex flex-col justify-center bg-surface">
+<span class="font-label-caps text-label-caps text-tertiary-container uppercase mb-2">Cellular Defense</span>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Tsubvu</h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">Exceptionally high anthocyanin content, synthesized for optimal bioavailability.</p>
+</div>
+</article>
+</div>
+</div>
+</section>
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-stack-lg">
+<div class="flex flex-col md:flex-row gap-stack-lg items-center">
+<div class="w-full md:w-1/2">
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-primary mb-6">Scientific Integrity</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8">
+                        Every batch undergoes rigorous macronutrient profiling. The Miracle Cookie isn't just baked; it's engineered to deliver precise nutritional outcomes without compromising on a tactile, gourmet experience.
+                    </p>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-surface-bright p-6 rounded-xl border border-outline-variant/20 shadow-sm">
+<span class="font-display-lg-mobile text-display-lg-mobile text-primary block mb-1">85%</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Bioavailable Nutrients</span>
+</div>
+<div class="bg-surface-bright p-6 rounded-xl border border-outline-variant/20 shadow-sm">
+<span class="font-display-lg-mobile text-display-lg-mobile text-primary block mb-1">12g</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Plant-Based Protein</span>
+</div>
+<div class="bg-surface-bright p-6 rounded-xl border border-outline-variant/20 shadow-sm">
+<span class="font-display-lg-mobile text-display-lg-mobile text-primary block mb-1">0g</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Refined Sugars</span>
+</div>
+<div class="bg-surface-bright p-6 rounded-xl border border-outline-variant/20 shadow-sm">
+<span class="font-display-lg-mobile text-display-lg-mobile text-primary block mb-1">3x</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Antioxidant Capacity</span>
+</div>
+</div>
+</div>
+<div class="w-full md:w-1/2 h-[500px] relative rounded-xl overflow-hidden">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="A sophisticated, high-end lifestyle photograph of a sleek, modern kitchen counter. Sunlight streams through a window, illuminating a minimalist espresso cup and the Miracle Breakfast Cookie resting on a linen napkin. The scene feels serene, aspirational, and meticulously curated, dominated by warm whites, light sage, and natural wood tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6KLN8-m-jN5lqGxumYmkdlwrCFSDHSTFEPoKMgfpi0KS1n0qbrx-fOyPG5Rh-DUegQvYTAmEmSjZ-cPWG1DTh6sK_R30zpcBhFKwWFeEgCqt_NPgMxHnRwYj2Y6TFaOe2q2EPA86sRaHj1GxcCG3w_B5mAKl4UX8bJ1toj9uHhvPiPpbYDvy8A1UqOwv70Ptg5JyvW2Xsih7pDEOCGCC1wSzlE3D0xgjG_2s4L61vEh7_wDo_8Cni3_cSBJ9uW6hSIcG3LKNf4Ws"/>
+</div>
+</div>
+</section>
+<section class="bg-surface-container-highest py-stack-lg border-y border-outline-variant/20">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center">
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-primary mb-12">Certified Excellence</h2>
+<div class="flex flex-wrap justify-center gap-12 items-center opacity-80">
+<div class="flex flex-col items-center gap-2">
+<span class="material-symbols-outlined text-4xl text-primary" style="font-variation-settings: 'FILL' 0;">science</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Lab Tested</span>
+</div>
+<div class="flex flex-col items-center gap-2">
+<span class="material-symbols-outlined text-4xl text-primary" style="font-variation-settings: 'FILL' 0;">eco</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Sustainably Sourced</span>
+</div>
+<div class="flex flex-col items-center gap-2">
+<span class="material-symbols-outlined text-4xl text-primary" style="font-variation-settings: 'FILL' 0;">verified_user</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Quality Assured</span>
+</div>
+<div class="flex flex-col items-center gap-2">
+<span class="material-symbols-outlined text-4xl text-primary" style="font-variation-settings: 'FILL' 0;">nutrition</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Nutrient Dense</span>
+</div>
+</div>
+</div>
+</section>
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-stack-lg">
+<div class="max-w-2xl mx-auto text-center">
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-primary mb-6">Initiate an Enquiry</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">Partner with us to bring refined nutritional engineering to your clientele.</p>
+<form class="space-y-8 text-left">
+<div class="relative pt-4">
+<input class="minimal-input w-full py-2 font-body-md text-body-md text-on-surface placeholder-transparent peer" id="name" placeholder="Full Name" type="text"/>
+<label class="absolute left-0 top-0 font-body-md text-body-md text-on-surface-variant transition-all peer-placeholder-shown:text-base peer-placeholder-shown:top-6 peer-focus:top-0 peer-focus:text-sm peer-focus:text-primary" for="name">Full Name</label>
+</div>
+<div class="relative pt-4">
+<input class="minimal-input w-full py-2 font-body-md text-body-md text-on-surface placeholder-transparent peer" id="email" placeholder="Business Email" type="email"/>
+<label class="absolute left-0 top-0 font-body-md text-body-md text-on-surface-variant transition-all peer-placeholder-shown:text-base peer-placeholder-shown:top-6 peer-focus:top-0 peer-focus:text-sm peer-focus:text-primary" for="email">Business Email</label>
+</div>
+<div class="relative pt-4">
+<textarea class="minimal-input w-full py-2 font-body-md text-body-md text-on-surface placeholder-transparent peer resize-none" id="message" placeholder="Message" rows="1"></textarea>
+<label class="absolute left-0 top-0 font-body-md text-body-md text-on-surface-variant transition-all peer-placeholder-shown:text-base peer-placeholder-shown:top-6 peer-focus:top-0 peer-focus:text-sm peer-focus:text-primary" for="message">Enquiry Details</label>
+</div>
+<button class="w-full px-8 py-4 bg-primary text-on-primary rounded-lg font-body-md text-body-md hover:opacity-90 transition-opacity mt-8" type="button">
+                        Submit Request
+                    </button>
+</form>
+</div>
+</section>
+</main>
+<footer class="bg-surface-container-highest dark:bg-surface-container-lowest w-full py-stack-lg mt-stack-lg bg-surface-container-highest">
+<div class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter">
+<div class="md:col-span-2">
+<div class="font-display-lg text-headline-lg text-primary dark:text-primary-fixed mb-4">Vipta Foods</div>
+<p class="font-body-md text-body-md text-primary dark:text-on-primary-container opacity-90">
+                    © 2024 Vipta Foods. Honoring Heritage, Engineering Health.
+                </p>
+</div>
+<div class="flex flex-col gap-4">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:underline transition-all opacity-90 hover:opacity-100" href="#">Sourcing</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:underline transition-all opacity-90 hover:opacity-100" href="#">Scientific Papers</a>
+</div>
+<div class="flex flex-col gap-4">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:underline transition-all opacity-90 hover:opacity-100" href="#">Privacy Policy</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:underline transition-all opacity-90 hover:opacity-100" href="#">Careers</a>
+</div>
+</div>
+</footer>
+</body></html>

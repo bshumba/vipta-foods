@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Our Story | Vipta Foods</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;700&amp;family=Playfair+Display:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#145225",
+                        "on-error-container": "#93000a",
+                        "surface-bright": "#f8faf3",
+                        "on-tertiary-fixed": "#251a00",
+                        "on-tertiary": "#ffffff",
+                        "background": "#f8faf3",
+                        "on-tertiary-container": "#fdd573",
+                        "secondary-container": "#b2f3ab",
+                        "on-primary": "#ffffff",
+                        "inverse-surface": "#2e312d",
+                        "on-tertiary-fixed-variant": "#5a4400",
+                        "surface-container": "#ecefe8",
+                        "surface-container-high": "#e6e9e2",
+                        "on-secondary-container": "#377137",
+                        "primary-fixed": "#b1f2b5",
+                        "on-secondary": "#ffffff",
+                        "tertiary-fixed": "#ffdf96",
+                        "tertiary-container": "#775b00",
+                        "surface-container-highest": "#e1e3dc",
+                        "outline-variant": "#c0c9bd",
+                        "inverse-primary": "#96d69b",
+                        "primary-fixed-dim": "#96d69b",
+                        "on-secondary-fixed": "#002204",
+                        "on-error": "#ffffff",
+                        "surface-container-low": "#f2f4ed",
+                        "on-primary-fixed-variant": "#135225",
+                        "on-background": "#191d18",
+                        "on-primary-container": "#a8e9ad",
+                        "tertiary": "#5a4400",
+                        "secondary": "#306a31",
+                        "tertiary-fixed-dim": "#e9c262",
+                        "surface-container-lowest": "#ffffff",
+                        "on-surface-variant": "#414940",
+                        "inverse-on-surface": "#eff2eb",
+                        "surface-tint": "#2e6a3a",
+                        "error-container": "#ffdad6",
+                        "secondary-fixed": "#b2f3ab",
+                        "on-secondary-fixed-variant": "#16521c",
+                        "surface-variant": "#e1e3dc",
+                        "surface-dim": "#d8dbd4",
+                        "on-surface": "#191d18",
+                        "secondary-fixed-dim": "#97d691",
+                        "surface": "#f8faf3",
+                        "outline": "#71796f",
+                        "on-primary-fixed": "#002109",
+                        "error": "#ba1a1a",
+                        "primary-container": "#2f6b3b"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "20px",
+                        "stack-md": "48px",
+                        "unit": "8px",
+                        "gutter": "24px",
+                        "margin-desktop": "64px",
+                        "stack-lg": "80px",
+                        "container-max": "1280px"
+                    },
+                    "fontFamily": {
+                        "display-lg-mobile": ["Playfair Display"],
+                        "display-lg": ["Playfair Display"],
+                        "headline-lg": ["Playfair Display"],
+                        "headline-md": ["Playfair Display"],
+                        "quote": ["Playfair Display"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "headline-lg-mobile": ["Playfair Display"],
+                        "body-md": ["Hanken Grotesk"],
+                        "label-caps": ["Hanken Grotesk"]
+                    },
+                    "fontSize": {
+                        "display-lg-mobile": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "display-lg": ["64px", { "lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-lg": ["40px", { "lineHeight": "48px", "fontWeight": "600" }],
+                        "headline-md": ["28px", { "lineHeight": "36px", "fontWeight": "500" }],
+                        "quote": ["24px", { "lineHeight": "34px", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["32px", { "lineHeight": "38px", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "label-caps": ["12px", { "lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .timeline-line::before {
+            content: '';
+            position: absolute;
+            top: 24px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: theme('colors.primary');
+            z-index: 0;
+        }
+        @media (max-width: 768px) {
+            .timeline-line::before {
+                top: 0;
+                left: 24px;
+                width: 2px;
+                height: 100%;
+            }
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface antialiased selection:bg-primary selection:text-white">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md border-b border-outline-variant/30 transition-all ease-in-out duration-300">
+<div class="flex justify-between items-center h-20 max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<a class="font-display-lg text-headline-lg-mobile md:text-headline-md font-bold text-primary" href="#">Vipta Foods</a>
+<div class="hidden md:flex gap-gutter items-center">
+<a class="font-body-md text-body-md uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Home</a>
+<a class="font-body-md text-body-md uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">About</a>
+<a class="font-body-md text-body-md uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Products</a>
+<a class="font-body-md text-body-md uppercase tracking-wider text-primary border-b-2 border-primary pb-1 font-bold duration-300" href="#">Our Story</a>
+<a class="font-body-md text-body-md uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Impact</a>
+<a class="font-body-md text-body-md uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Contact</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="hidden md:block bg-primary text-on-primary font-label-caps text-label-caps px-6 py-3 rounded-lg hover:border-tertiary-fixed-dim border border-transparent transition-all shadow-sm">
+                    Connect
+                </button>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="pt-32 md:pt-48 pb-stack-lg px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="text-center max-w-3xl mx-auto space-y-6">
+<span class="font-label-caps text-label-caps text-tertiary-fixed-dim uppercase">Our Heritage</span>
+<h1 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-primary">Roots in the Earth, <br/>Eyes on the Future.</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">We are a Zimbabwean food science startup dedicated to unearthing the profound nutritional potential of indigenous ingredients. We honor ancestral wisdom through rigorous modern engineering.</p>
+</div>
+</header>
+<!-- Full Width Pull Quote -->
+<section class="bg-surface-container-low py-stack-lg px-margin-mobile md:px-margin-desktop mb-stack-lg border-y border-outline-variant/20">
+<div class="max-w-4xl mx-auto text-center">
+<blockquote class="font-quote text-quote text-primary italic leading-relaxed">
+                "To refine an ingredient without understanding its origin is to strip away its soul. We are alchemists of our own land, seeking not just nutrition, but a reconnection to the soil that sustains us."
+            </blockquote>
+<p class="mt-6 font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest">— The Founder's Journal</p>
+</div>
+</section>
+<!-- Editorial Story Block 1 -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-stack-lg">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-5 space-y-6 order-2 md:order-1">
+<span class="font-label-caps text-label-caps text-tertiary-fixed-dim uppercase">Chapter 01: The Harvest</span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-primary">Reclaiming the Matohwe.</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">For generations, the Matohwe fruit was a staple, gathered beneath the vast Zimbabwean sky. Over time, commercial agriculture pushed these resilient, nutrient-dense fruits to the margins. We began our journey by listening to the elders, understanding the seasonal rhythms, and recognizing the untapped vitality hidden within the neglected thickets.</p>
+<div class="pt-4">
+<button class="bg-transparent border border-primary text-primary font-label-caps text-label-caps px-6 py-3 rounded-lg hover:bg-surface-container-high transition-colors">Read Field Notes</button>
+</div>
+</div>
+<div class="md:col-span-7 order-1 md:order-2 h-96 md:h-[600px] w-full rounded-xl overflow-hidden relative shadow-sm border border-outline-variant/30">
+<img class="object-cover w-full h-full absolute inset-0" data-alt="A high-quality, editorial-style photograph of weathered, indigenous Matohwe fruits resting in a woven basket. The lighting is warm and natural, suggesting late afternoon sun in a rural Zimbabwean landscape. The image conveys a sense of tactile organic texture, deep connection to the earth, and premium agricultural heritage. The color palette features rich earthy browns, deep greens, and soft golden light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTVd1IgiqtWC2To7eHthjgqPeru6PJpVYuMr5Y4NgmW3OQCmDze25SVAPFe9XfQkPpTDwqqHrNTtUXxId2kHVgGvaNQ-sNiT9vuJkDortLZ4OEi3WsBSynFEBU9T-ku0nXCesX1-Zm9OPHyuIj2NrOISj5ugXNeTHJlzr8jmF5FZYRQ5ZoNyEfcs8Dum0d9ifg9pUmd5THSVL6KNWfmpJt3jAcDYuvJ-WNI2TBIOfS8RQRUP7rhz0mENPlAJ0UF7N_L9ucpCyagjs"/>
+</div>
+</div>
+</section>
+<!-- Editorial Story Block 2 (Reversed) -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-stack-lg">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-7 h-96 md:h-[600px] w-full rounded-xl overflow-hidden relative shadow-sm border border-outline-variant/30">
+<img class="object-cover w-full h-full absolute inset-0" data-alt="A macro, scientific-style photograph showing a clear glass beaker containing a rich, dark amber extract derived from indigenous fruits. The beaker sits on a clean, modern stainless steel laboratory surface. Soft, highly controlled studio lighting highlights the viscosity and purity of the liquid. The aesthetic merges natural origins with precise, clinical food science, utilizing a cool white background contrasting with the warm amber extract." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDsrB_51Y2lweRF2FgKeuO26baM9t3tP-0tNYwfecz9rdmNFRewWZCaPL3k9-KMRyVqIgLWRySkdji0lByUu91JgdHnbGuya0Cz7YHEXdJ8j4hAmJNcCCBPvvo-xk53eO80K4zuC0Dp-SsMiLA88RFNXKcqTHwG22ks4dglu5Rc8qr58LjGFAWRoh_bULfqDSth15MnOcmubHJWJn29wLrx7jQHzOpRj3NvaVOUfxCAhZ0X7BXWk8ME76ts2Mgk961UIYMbHFaikw"/>
+</div>
+<div class="md:col-span-5 space-y-6 pl-0 md:pl-12">
+<span class="font-label-caps text-label-caps text-tertiary-fixed-dim uppercase">Chapter 02: The Alchemy</span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-primary">Engineering Health.</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Respecting the raw ingredient is only half the equation. In our labs, we apply cutting-edge extraction techniques to maximize bioavailability. We transform the Mazhanje and Tsubvu into sophisticated nutritional profiles, ensuring that every compound is preserved, concentrated, and delivered with clinical precision.</p>
+<div class="pt-4 flex gap-6">
+<div class="bg-surface-bright p-4 rounded-lg shadow-sm border border-outline-variant/30 flex-1">
+<span class="block font-display-lg-mobile text-display-lg-mobile text-primary mb-1">85%</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">Bioavailability</span>
+</div>
+<div class="bg-surface-bright p-4 rounded-lg shadow-sm border border-outline-variant/30 flex-1">
+<span class="block font-display-lg-mobile text-display-lg-mobile text-primary mb-1">3x</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">Antioxidant Load</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Innovation Timeline -->
+<section class="bg-surface-container py-stack-lg px-margin-mobile md:px-margin-desktop mb-stack-lg">
+<div class="max-w-container-max mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-primary mb-4">The Pathway of Innovation</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto">From untamed wilderness to refined nutritional essence, our process is deliberate and meticulous.</p>
+</div>
+<div class="relative timeline-line">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 relative z-10">
+<div class="flex flex-col items-start md:items-center relative pl-12 md:pl-0">
+<div class="w-12 h-12 rounded-full bg-surface border-2 border-primary flex items-center justify-center mb-6 absolute md:relative left-0 top-0 md:top-auto md:left-auto">
+<span class="material-symbols-outlined text-primary">eco</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-2 md:text-center">Sourcing</h3>
+<p class="font-body-md text-body-md text-on-surface-variant md:text-center">Identifying pristine microclimates and partnering with local custodians.</p>
+</div>
+<div class="flex flex-col items-start md:items-center relative pl-12 md:pl-0 mt-8 md:mt-0">
+<div class="w-12 h-12 rounded-full bg-surface border-2 border-primary flex items-center justify-center mb-6 absolute md:relative left-0 top-0 md:top-auto md:left-auto">
+<span class="material-symbols-outlined text-primary">science</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-2 md:text-center">Extraction</h3>
+<p class="font-body-md text-body-md text-on-surface-variant md:text-center">Cold-press and low-heat techniques to preserve delicate phytonutrients.</p>
+</div>
+<div class="flex flex-col items-start md:items-center relative pl-12 md:pl-0 mt-8 md:mt-0">
+<div class="w-12 h-12 rounded-full bg-surface border-2 border-primary flex items-center justify-center mb-6 absolute md:relative left-0 top-0 md:top-auto md:left-auto">
+<span class="material-symbols-outlined text-primary">biotech</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-2 md:text-center">Synthesis</h3>
+<p class="font-body-md text-body-md text-on-surface-variant md:text-center">Formulating synergistic blends for optimal physiological absorption.</p>
+</div>
+<div class="flex flex-col items-start md:items-center relative pl-12 md:pl-0 mt-8 md:mt-0">
+<div class="w-12 h-12 rounded-full bg-primary flex items-center justify-center mb-6 absolute md:relative left-0 top-0 md:top-auto md:left-auto shadow-md">
+<span class="material-symbols-outlined text-on-primary">local_dining</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-2 md:text-center">Delivery</h3>
+<p class="font-body-md text-body-md text-on-surface-variant md:text-center">Presenting uncompromising nutrition in an elegant, accessible format.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full py-stack-lg mt-stack-lg bg-surface-container-highest">
+<div class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter opacity-90 hover:opacity-100 transition-all ease-in-out duration-300">
+<div class="col-span-1 md:col-span-1">
+<span class="font-display-lg text-headline-lg text-primary">Vipta Foods</span>
+<p class="mt-4 font-body-md text-body-md text-on-surface-variant">© 2024 Vipta Foods. Honoring Heritage, Engineering Health.</p>
+</div>
+<div class="col-span-1 md:col-span-3 flex flex-col md:flex-row gap-6 md:gap-12 md:justify-end items-start md:items-center">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:underline transition-all" href="#">Sourcing</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:underline transition-all" href="#">Scientific Papers</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:underline transition-all" href="#">Privacy Policy</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:underline transition-all" href="#">Careers</a>
+</div>
+</div>
+</footer>
+</body></html>

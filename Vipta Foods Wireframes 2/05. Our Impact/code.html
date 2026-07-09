@@ -1,0 +1,274 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Impact - Vipta Foods</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;700&amp;family=Playfair+Display:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#145225",
+                        "on-error-container": "#93000a",
+                        "surface-bright": "#f8faf3",
+                        "on-tertiary-fixed": "#251a00",
+                        "on-tertiary": "#ffffff",
+                        "background": "#f8faf3",
+                        "on-tertiary-container": "#fdd573",
+                        "secondary-container": "#b2f3ab",
+                        "on-primary": "#ffffff",
+                        "inverse-surface": "#2e312d",
+                        "on-tertiary-fixed-variant": "#5a4400",
+                        "surface-container": "#ecefe8",
+                        "surface-container-high": "#e6e9e2",
+                        "on-secondary-container": "#377137",
+                        "primary-fixed": "#b1f2b5",
+                        "on-secondary": "#ffffff",
+                        "tertiary-fixed": "#ffdf96",
+                        "tertiary-container": "#775b00",
+                        "surface-container-highest": "#e1e3dc",
+                        "outline-variant": "#c0c9bd",
+                        "inverse-primary": "#96d69b",
+                        "primary-fixed-dim": "#96d69b",
+                        "on-secondary-fixed": "#002204",
+                        "on-error": "#ffffff",
+                        "surface-container-low": "#f2f4ed",
+                        "on-primary-fixed-variant": "#135225",
+                        "on-background": "#191d18",
+                        "on-primary-container": "#a8e9ad",
+                        "tertiary": "#5a4400",
+                        "secondary": "#306a31",
+                        "tertiary-fixed-dim": "#e9c262",
+                        "surface-container-lowest": "#ffffff",
+                        "on-surface-variant": "#414940",
+                        "inverse-on-surface": "#eff2eb",
+                        "surface-tint": "#2e6a3a",
+                        "error-container": "#ffdad6",
+                        "secondary-fixed": "#b2f3ab",
+                        "on-secondary-fixed-variant": "#16521c",
+                        "surface-variant": "#e1e3dc",
+                        "surface-dim": "#d8dbd4",
+                        "on-surface": "#191d18",
+                        "secondary-fixed-dim": "#97d691",
+                        "surface": "#f8faf3",
+                        "outline": "#71796f",
+                        "on-primary-fixed": "#002109",
+                        "error": "#ba1a1a",
+                        "primary-container": "#2f6b3b"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "20px",
+                        "stack-md": "48px",
+                        "unit": "8px",
+                        "gutter": "24px",
+                        "margin-desktop": "64px",
+                        "stack-lg": "80px",
+                        "container-max": "1280px"
+                    },
+                    "fontFamily": {
+                        "display-lg-mobile": ["Playfair Display"],
+                        "display-lg": ["Playfair Display"],
+                        "headline-lg": ["Playfair Display"],
+                        "headline-md": ["Playfair Display"],
+                        "quote": ["Playfair Display"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "headline-lg-mobile": ["Playfair Display"],
+                        "body-md": ["Hanken Grotesk"],
+                        "label-caps": ["Hanken Grotesk"]
+                    },
+                    "fontSize": {
+                        "display-lg-mobile": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "display-lg": ["64px", { "lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-lg": ["40px", { "lineHeight": "48px", "fontWeight": "600" }],
+                        "headline-md": ["28px", { "lineHeight": "36px", "fontWeight": "500" }],
+                        "quote": ["24px", { "lineHeight": "34px", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["32px", { "lineHeight": "38px", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "label-caps": ["12px", { "lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: theme('colors.background');
+            color: theme('colors.on-background');
+        }
+        .editorial-image-mask {
+            mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+            -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid theme('colors.outline-variant');
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/90 dark:bg-surface-dim/90 backdrop-blur-md border-b border-outline-variant/30 transition-all ease-in-out duration-300">
+<div class="flex justify-between items-center h-20 max-w-container-max mx-auto px-margin-desktop md:px-margin-desktop px-margin-mobile">
+<a class="font-display-lg text-headline-md font-bold text-primary dark:text-primary-fixed hover:opacity-80 transition-opacity" href="#">
+                Vipta Foods
+            </a>
+<div class="hidden md:flex gap-gutter items-center">
+<a class="font-body-md text-body-md uppercase tracking-wider text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors dark:hover:text-primary-fixed duration-300" href="#">Home</a>
+<a class="font-body-md text-body-md uppercase tracking-wider text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors dark:hover:text-primary-fixed duration-300" href="#">About</a>
+<a class="font-body-md text-body-md uppercase tracking-wider text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors dark:hover:text-primary-fixed duration-300" href="#">Products</a>
+<a class="font-body-md text-body-md uppercase tracking-wider text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors dark:hover:text-primary-fixed duration-300" href="#">Our Story</a>
+<a class="font-body-md text-body-md uppercase tracking-wider text-primary dark:text-primary-fixed border-b-2 border-primary pb-1 font-bold hover:text-primary dark:hover:text-primary-fixed duration-300" href="#">Impact</a>
+<a class="font-body-md text-body-md uppercase tracking-wider text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors dark:hover:text-primary-fixed duration-300" href="#">Contact</a>
+</div>
+<div class="hidden md:block">
+<button class="bg-primary text-on-primary font-body-md text-body-md px-6 py-2 rounded-lg hover:border-tertiary-fixed border border-transparent transition-all duration-300">
+                    Connect
+                </button>
+</div>
+<!-- Mobile Menu Toggle (Simplified) -->
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</nav>
+<main class="pt-24 md:pt-32 pb-stack-lg">
+<!-- Hero Section -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-stack-lg">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center min-h-[70vh]">
+<div class="lg:col-span-6 z-10 relative">
+<span class="font-label-caps text-label-caps text-tertiary uppercase mb-4 block">Sustainable Agriculture</span>
+<h1 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-primary mb-6 leading-tight">
+                        Rooted in Heritage. <br> Growing the Future.
+                    </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8 max-w-lg">
+                        We believe that true health begins in the soil. Our commitment to sustainable farming in Zimbabwe not only yields premium ingredients but empowers communities and restores the land.
+                    </p>
+<div class="flex gap-4">
+<button class="bg-primary text-on-primary font-body-md text-body-md px-8 py-3 rounded-lg hover:border-tertiary-fixed border border-transparent transition-all duration-300">
+                            Our Impact Report
+                        </button>
+</div>
+</div>
+<div class="lg:col-span-6 relative h-[50vh] lg:h-[80vh] w-full mt-stack-md lg:mt-0">
+<div class="absolute inset-0 bg-surface-container-highest rounded-2xl overflow-hidden shadow-sm">
+<img alt="A wide-angle, cinematic view of a pristine African woodland/savanna forest in Zimbabwe." class="w-full h-full object-cover editorial-image-mask transition-transform duration-700 hover:scale-105" data-alt="A sweeping, high-end editorial photograph of a lush agricultural landscape in Zimbabwe at golden hour. The warm, soft sunlight highlights rows of healthy crops and indigenous trees. The aesthetic is clean, modern, and high-contrast, fitting a premium health and wellness brand with deep green and warm earthy tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDpW3fWT92xE9SDOhl1QxSqET0__oO-BLklowNI5GlWmmtKxSr5PchiGHgYkYwDu_m018lbSm7_wlwzl2a-NwtTdOz_ZGELiQVnjDA_RLSRduMBsUIl6olEkJX1E1xF3EjFQ3Uu1QhvYDwxHXFWMmV449q2kTE5TkHN-3yQvZXGMGeburuF_HR7YDKShaRHm56-nM44gVQ651STw_9Ubf3Vwjn4CzOBMWilxsyjfKPYONxnS7NeGwC8Z0gzNe7Rvx9qEcgAFuZRZQ">
+</div>
+<!-- Floating Stat Card -->
+<div class="absolute -bottom-6 -left-6 md:bottom-12 md:-left-12 glass-card p-6 rounded-xl w-64 shadow-[0_8px_30px_rgb(20,82,37,0.15)] transform transition-transform hover:-translate-y-1">
+<h3 class="font-headline-lg text-headline-lg text-primary mb-1">10k+</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Smallholder farmers supported across Zimbabwe.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Stats Grid & Science -->
+<section class="bg-surface-container-low py-stack-lg mb-stack-lg border-y border-outline-variant/20">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="text-center mb-stack-md">
+<span class="font-label-caps text-label-caps text-tertiary uppercase mb-2 block">Measurable Change</span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-primary">Impact by the Numbers</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Stat 1 -->
+<div class="bg-surface-lowest p-8 rounded-xl border border-outline-variant/30 shadow-[0_4px_20px_rgb(20,82,37,0.05)] hover:-translate-y-1 transition-transform duration-300">
+<span class="material-symbols-outlined text-4xl text-secondary mb-4" style="font-variation-settings: 'FILL' 1;">eco</span>
+<h4 class="font-display-lg-mobile text-display-lg-mobile text-primary mb-2">45%</h4>
+<p class="font-body-lg text-body-lg text-on-surface font-medium mb-2">Water Saved</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Through implementation of precision drip irrigation across all partner farms.</p>
+</div>
+<!-- Stat 2 -->
+<div class="bg-surface-lowest p-8 rounded-xl border border-outline-variant/30 shadow-[0_4px_20px_rgb(20,82,37,0.05)] hover:-translate-y-1 transition-transform duration-300">
+<span class="material-symbols-outlined text-4xl text-secondary mb-4" style="font-variation-settings: 'FILL' 1;">groups</span>
+<h4 class="font-display-lg-mobile text-display-lg-mobile text-primary mb-2">60%</h4>
+<p class="font-body-lg text-body-lg text-on-surface font-medium mb-2">Women Farmers</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Empowering female agricultural leaders in rural communities through direct partnerships.</p>
+</div>
+<!-- Stat 3 -->
+<div class="bg-surface-lowest p-8 rounded-xl border border-outline-variant/30 shadow-[0_4px_20px_rgb(20,82,37,0.05)] hover:-translate-y-1 transition-transform duration-300">
+<span class="material-symbols-outlined text-4xl text-secondary mb-4" style="font-variation-settings: 'FILL' 1;">nature</span>
+<h4 class="font-display-lg-mobile text-display-lg-mobile text-primary mb-2">12k</h4>
+<p class="font-body-lg text-body-lg text-on-surface font-medium mb-2">Trees Planted</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Indigenous species restored to protect soil health and promote local biodiversity.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Sourcing Map Section -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-stack-lg">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-gutter items-center">
+<div class="order-2 lg:order-1 h-[400px] lg:h-[600px] rounded-2xl overflow-hidden bg-surface-container border border-outline-variant/30 relative">
+<!-- Placeholder for Map -->
+<img alt="Sourcing Map Zimbabwe" class="w-full h-full object-cover" data-alt="A stylized, minimalist map of Zimbabwe highlighting agricultural regions. The map uses a premium editorial color palette with deep greens, light sage, and warm cream tones. Subtle geographical contours are visible, maintaining a clean, high-end magazine aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDatFf8ISUfyAvJNLw_vkVRuDvgt-_Mys00HxYtgYgfHQcOz7JxLy9FiMhR4D4kzHusXX_atvFY4LWhIls9Q5NNo6UHHWQ4eYmSbUKbJYrMAjaDPeYKkuCw_Bybiw4KWaCihabsg-MzzYJKKmOTHMMs--KZkBhp3GxeQ3LAMdPQDweyjVr8FG-ZaRZXxiS6zBkdn5uwC9Z-AY15dpvm_G12oKx0UiW4HgGJX09YC_fUFvF5-mGxkb9QWv3AiZBybpaPWl2orv2ERyM">
+<div class="absolute bottom-6 left-6 glass-card px-4 py-2 rounded-lg">
+<span class="font-label-caps text-label-caps text-primary">Sourcing Regions: Zimbabwe</span>
+</div>
+</div>
+<div class="order-1 lg:order-2 lg:pl-12">
+<span class="font-label-caps text-label-caps text-tertiary uppercase mb-4 block">Traceability</span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-primary mb-6">From Zimbabwean Soil to Global Science.</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-6">
+                        We don't just buy ingredients; we partner with the land. Our supply chain is entirely traceable, ensuring that every harvest of Matohwe, Mazhanje, and Tsubvu contributes directly to the economic vitality of specific regions in Zimbabwe.
+                    </p>
+<ul class="space-y-4 mb-8">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+<div>
+<h5 class="font-body-md text-body-md font-medium text-on-surface">Direct Trade</h5>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Eliminating middlemen to maximize farmer revenue.</p>
+</div>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+<div>
+<h5 class="font-body-md text-body-md font-medium text-on-surface">Regenerative Practices</h5>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Farming that restores rather than depletes.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-stack-lg mt-stack-lg bg-surface-container-highest dark:bg-surface-container-lowest">
+<div class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter">
+<div class="col-span-1 md:col-span-2">
+<a class="font-display-lg text-headline-lg text-primary dark:text-primary-fixed mb-4 block" href="#">
+                    Vipta Foods
+                </a>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-sm mb-6">
+                    © 2024 Vipta Foods. Honoring Heritage, Engineering Health.
+                </p>
+</div>
+<div class="col-span-1">
+<h4 class="font-body-md text-body-md font-bold text-primary dark:text-on-primary-container mb-4">Legal</h4>
+<ul class="space-y-2">
+<li class=""><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:underline transition-all opacity-90 hover:opacity-100" href="#">Sourcing</a></li>
+<li class=""><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:underline transition-all opacity-90 hover:opacity-100" href="#">Scientific Papers</a></li>
+<li class=""><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:underline transition-all opacity-90 hover:opacity-100" href="#">Privacy Policy</a></li>
+<li class=""><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:underline transition-all opacity-90 hover:opacity-100" href="#">Careers</a></li>
+</ul>
+</div>
+<div class="col-span-1">
+<h4 class="font-body-md text-body-md font-bold text-primary dark:text-on-primary-container mb-4">Contact</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                    info@viptafoods.com
+                </p>
+</div>
+</div>
+</footer>
+
+
+</body></html>

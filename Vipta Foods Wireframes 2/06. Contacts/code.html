@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact Us - Vipta Foods</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;700&amp;family=Playfair+Display:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#145225",
+                        "on-error-container": "#93000a",
+                        "surface-bright": "#f8faf3",
+                        "on-tertiary-fixed": "#251a00",
+                        "on-tertiary": "#ffffff",
+                        "background": "#f8faf3",
+                        "on-tertiary-container": "#fdd573",
+                        "secondary-container": "#b2f3ab",
+                        "on-primary": "#ffffff",
+                        "inverse-surface": "#2e312d",
+                        "on-tertiary-fixed-variant": "#5a4400",
+                        "surface-container": "#ecefe8",
+                        "surface-container-high": "#e6e9e2",
+                        "on-secondary-container": "#377137",
+                        "primary-fixed": "#b1f2b5",
+                        "on-secondary": "#ffffff",
+                        "tertiary-fixed": "#ffdf96",
+                        "tertiary-container": "#775b00",
+                        "surface-container-highest": "#e1e3dc",
+                        "outline-variant": "#c0c9bd",
+                        "inverse-primary": "#96d69b",
+                        "primary-fixed-dim": "#96d69b",
+                        "on-secondary-fixed": "#002204",
+                        "on-error": "#ffffff",
+                        "surface-container-low": "#f2f4ed",
+                        "on-primary-fixed-variant": "#135225",
+                        "on-background": "#191d18",
+                        "on-primary-container": "#a8e9ad",
+                        "tertiary": "#5a4400",
+                        "secondary": "#306a31",
+                        "tertiary-fixed-dim": "#e9c262",
+                        "surface-container-lowest": "#ffffff",
+                        "on-surface-variant": "#414940",
+                        "inverse-on-surface": "#eff2eb",
+                        "surface-tint": "#2e6a3a",
+                        "error-container": "#ffdad6",
+                        "secondary-fixed": "#b2f3ab",
+                        "on-secondary-fixed-variant": "#16521c",
+                        "surface-variant": "#e1e3dc",
+                        "surface-dim": "#d8dbd4",
+                        "on-surface": "#191d18",
+                        "secondary-fixed-dim": "#97d691",
+                        "surface": "#f8faf3",
+                        "outline": "#71796f",
+                        "on-primary-fixed": "#002109",
+                        "error": "#ba1a1a",
+                        "primary-container": "#2f6b3b"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "20px",
+                        "stack-md": "48px",
+                        "unit": "8px",
+                        "gutter": "24px",
+                        "margin-desktop": "64px",
+                        "stack-lg": "80px",
+                        "container-max": "1280px"
+                    },
+                    "fontFamily": {
+                        "display-lg-mobile": ["Playfair Display"],
+                        "display-lg": ["Playfair Display"],
+                        "headline-lg": ["Playfair Display"],
+                        "headline-md": ["Playfair Display"],
+                        "quote": ["Playfair Display"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "headline-lg-mobile": ["Playfair Display"],
+                        "body-md": ["Hanken Grotesk"],
+                        "label-caps": ["Hanken Grotesk"]
+                    },
+                    "fontSize": {
+                        "display-lg-mobile": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "display-lg": ["64px", { "lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-lg": ["40px", { "lineHeight": "48px", "fontWeight": "600" }],
+                        "headline-md": ["28px", { "lineHeight": "36px", "fontWeight": "500" }],
+                        "quote": ["24px", { "lineHeight": "34px", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["32px", { "lineHeight": "38px", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "label-caps": ["12px", { "lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: theme('colors.background');
+            color: theme('colors.on-background');
+        }
+        .material-symbols-outlined {
+            font-family: 'Material Symbols Outlined';
+            font-weight: normal;
+            font-style: normal;
+            font-size: 24px;
+            line-height: 1;
+            letter-spacing: normal;
+            text-transform: none;
+            display: inline-block;
+            white-space: nowrap;
+            word-wrap: normal;
+            direction: ltr;
+            font-feature-settings: 'liga';
+            -webkit-font-feature-settings: 'liga';
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        /* Floating Label Styles */
+        .input-group {
+            position: relative;
+            margin-bottom: theme('spacing.stack-md');
+        }
+        .input-group input, .input-group textarea {
+            width: 100%;
+            padding: 10px 0;
+            font-size: 16px;
+            color: theme('colors.on-surface');
+            border: none;
+            border-bottom: 1px solid theme('colors.primary');
+            outline: none;
+            background: transparent;
+            font-family: 'Hanken Grotesk', sans-serif;
+            transition: all 0.3s ease;
+        }
+        .input-group label {
+            position: absolute;
+            top: 10px;
+            left: 0;
+            font-size: 16px;
+            color: theme('colors.on-surface-variant');
+            pointer-events: none;
+            transition: 0.3s ease all;
+            font-family: 'Hanken Grotesk', sans-serif;
+        }
+        .input-group input:focus, .input-group textarea:focus {
+            border-bottom: 2px solid theme('colors.primary');
+        }
+        .input-group input:focus ~ label, .input-group input:valid ~ label,
+        .input-group textarea:focus ~ label, .input-group textarea:valid ~ label {
+            top: -20px;
+            font-size: 12px;
+            color: theme('colors.primary');
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+        
+        .contact-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .contact-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px -5px rgba(20, 82, 37, 0.15); /* 15% opacity Primary Green tint */
+        }
+    </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<nav class="bg-surface/90 dark:bg-surface-dim/90 backdrop-blur-md fixed top-0 w-full z-50 border-b border-outline-variant/30 transition-all ease-in-out duration-300">
+<div class="flex justify-between items-center h-20 max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<a class="font-display-lg-mobile md:font-display-lg text-headline-lg-mobile md:text-headline-md font-bold text-primary dark:text-primary-fixed" href="#">Vipta Foods</a>
+<div class="hidden md:flex gap-gutter items-center">
+<a class="font-body-md text-body-md uppercase tracking-wider text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors hover:text-primary dark:hover:text-primary-fixed duration-300" href="#">Home</a>
+<a class="font-body-md text-body-md uppercase tracking-wider text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors hover:text-primary dark:hover:text-primary-fixed duration-300" href="#">About</a>
+<a class="font-body-md text-body-md uppercase tracking-wider text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors hover:text-primary dark:hover:text-primary-fixed duration-300" href="#">Products</a>
+<a class="font-body-md text-body-md uppercase tracking-wider text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors hover:text-primary dark:hover:text-primary-fixed duration-300" href="#">Our Story</a>
+<a class="font-body-md text-body-md uppercase tracking-wider text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors hover:text-primary dark:hover:text-primary-fixed duration-300" href="#">Impact</a>
+<a class="font-body-md text-body-md uppercase tracking-wider text-primary dark:text-primary-fixed border-b-2 border-primary pb-1 font-bold hover:text-primary dark:hover:text-primary-fixed duration-300" href="#">Contact</a>
+</div>
+<button class="bg-primary text-on-primary font-body-md text-body-md px-6 py-2 rounded-lg border border-transparent hover:border-[#fdd573] transition-colors">Connect</button>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="flex-grow pt-32 pb-stack-lg w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<!-- Header Section -->
+<header class="mb-stack-lg text-center md:text-left max-w-3xl">
+<p class="font-label-caps text-label-caps text-tertiary-container uppercase tracking-widest mb-unit">Get in Touch</p>
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-gutter">Connect with the Alchemists</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">We invite inquiries regarding sourcing, partnerships, and scientific collaborations. Reach out to discover how we are engineering health through heritage.</p>
+</header>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-stack-lg items-start">
+<!-- Contact Form (Left) -->
+<section class="bg-surface-container-lowest p-margin-mobile md:p-margin-desktop rounded-lg border border-[#E5EADF] shadow-sm">
+<form action="#" class="w-full" method="POST">
+<div class="input-group">
+<input id="name" name="name" required="" type="text"/>
+<label for="name">Full Name</label>
+</div>
+<div class="input-group">
+<input id="email" name="email" required="" type="email"/>
+<label for="email">Email Address</label>
+</div>
+<div class="input-group">
+<input id="subject" name="subject" required="" type="text"/>
+<label for="subject">Subject of Inquiry</label>
+</div>
+<div class="input-group">
+<textarea id="message" name="message" required="" rows="4"></textarea>
+<label for="message">Your Message</label>
+</div>
+<button class="w-full mt-gutter bg-primary text-on-primary font-body-md text-body-md px-6 py-4 rounded-lg border border-transparent hover:border-[#fdd573] transition-colors flex items-center justify-center gap-2" type="submit">
+<span>Send Message</span>
+<span class="material-symbols-outlined" style="font-size: 20px;">send</span>
+</button>
+</form>
+</section>
+<!-- Map & Contact Info (Right) -->
+<section class="flex flex-col gap-stack-md">
+<!-- Map Placeholder -->
+<div class="w-full h-80 rounded-lg overflow-hidden border border-[#E5EADF] bg-surface-container-high relative">
+<img class="w-full h-full object-cover" data-alt="A sophisticated, minimalist map visualization of Harare, Zimbabwe. The map uses a high-key light mode aesthetic with subtle warm cream tones (#F8F5EC) for landmasses and deep primary green (#145225) for major arteries and water features. The lighting is flat and editorial, evoking a premium digital print magazine style. A subtle golden accent marks the location of the headquarters. The overall mood is grounded, organic, and modern." data-location="Harare, Zimbabwe" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZ8pYaDIJa9GEJQt9o2qVGoX3YNccsLofRMonMkE8DRQTxuK9wdoEB-IiYRMe3d7HVN3PlUGWbngSCI0XjYf5ndmpzjhAxAUWtUxUh5xphzKKKrB_5aHtMY1Nnk2q0o1pxtiy4suX6xWWOkscbpAUWixDI7yTela6ho_KNc7h-abTNQjInMZI2oGSzcbCg-04gRMMwiFztFxQqHY62hys49MurPqBfEU1RdLlMEtr0I3Eh-87yWxw6THsHk_UIczapGGN1weDXh68"/>
+</div>
+<!-- Contact Cards Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-gutter">
+<!-- Office Card -->
+<div class="contact-card bg-surface-container-lowest p-6 rounded-lg border border-[#E5EADF] flex flex-col gap-2">
+<span class="material-symbols-outlined text-primary mb-2" style="font-variation-settings: 'FILL' 0;">location_on</span>
+<h3 class="font-headline-md text-body-lg font-bold text-primary">Headquarters</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">14 Heritage Avenue<br/>Harare, Zimbabwe</p>
+</div>
+<!-- Email Card -->
+<div class="contact-card bg-surface-container-lowest p-6 rounded-lg border border-[#E5EADF] flex flex-col gap-2">
+<span class="material-symbols-outlined text-primary mb-2" style="font-variation-settings: 'FILL' 0;">mail</span>
+<h3 class="font-headline-md text-body-lg font-bold text-primary">Email Us</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">inquiries@viptafoods.com<br/>press@viptafoods.com</p>
+</div>
+<!-- Phone Card -->
+<div class="contact-card bg-surface-container-lowest p-6 rounded-lg border border-[#E5EADF] flex flex-col gap-2">
+<span class="material-symbols-outlined text-primary mb-2" style="font-variation-settings: 'FILL' 0;">call</span>
+<h3 class="font-headline-md text-body-lg font-bold text-primary">Call Us</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">+263 242 123 456<br/>Mon-Fri, 9am - 5pm CAT</p>
+</div>
+<!-- Hours Card -->
+<div class="contact-card bg-surface-container-lowest p-6 rounded-lg border border-[#E5EADF] flex flex-col gap-2">
+<span class="material-symbols-outlined text-primary mb-2" style="font-variation-settings: 'FILL' 0;">schedule</span>
+<h3 class="font-headline-md text-body-lg font-bold text-primary">Lab Hours</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Mon-Fri: 08:00 - 18:00<br/>Sat-Sun: Closed</p>
+</div>
+</div>
+</section>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-highest dark:bg-surface-container-lowest w-full py-stack-lg mt-stack-lg">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter opacity-90 hover:opacity-100 transition-all ease-in-out duration-300">
+<div class="col-span-1 md:col-span-2">
+<h2 class="font-display-lg-mobile md:font-display-lg text-headline-lg-mobile md:text-headline-lg text-primary dark:text-primary-fixed mb-4">Vipta Foods</h2>
+<p class="font-body-md text-body-md text-primary dark:text-on-primary-container">© 2024 Vipta Foods. Honoring Heritage, Engineering Health.</p>
+</div>
+<div class="col-span-1 flex flex-col gap-2">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:underline transition-all" href="#">Sourcing</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:underline transition-all" href="#">Scientific Papers</a>
+</div>
+<div class="col-span-1 flex flex-col gap-2">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:underline transition-all" href="#">Privacy Policy</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:underline transition-all" href="#">Careers</a>
+</div>
+</div>
+</footer>
+</body></html>
