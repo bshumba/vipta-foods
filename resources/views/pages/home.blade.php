@@ -27,6 +27,11 @@
         <div class="mx-auto grid min-h-[700px] max-w-7xl items-center gap-12 px-5 py-16 sm:px-8 min-[900px]:grid-cols-[1fr_0.92fr] lg:min-h-[760px] lg:px-12 lg:py-24">
             <div class="max-w-2xl">
                 <p class="text-xs font-bold uppercase tracking-[0.18em] text-vipta-earth">{{ $hero['eyebrow'] ?? '' }}</p>
+                @if (filled($hero['tagline'] ?? null))
+                    <p class="mt-4 max-w-xl font-display text-2xl font-semibold leading-tight text-vipta-earth sm:text-3xl">
+                        {{ $hero['tagline'] }}
+                    </p>
+                @endif
                 <h1 class="mt-5 font-display text-4xl font-bold leading-[1.04] text-vipta-green sm:text-6xl min-[900px]:text-5xl lg:text-7xl">
                     {{ $hero['heading'] ?? '' }}
                 </h1>

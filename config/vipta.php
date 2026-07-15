@@ -5,8 +5,8 @@ return [
         'name' => 'Vipta Health Foods',
         'display_name' => 'Vipta Foods',
         'short_name' => 'Vipta Foods',
-        'slogan' => 'Naturally Healthy',
-        'description' => 'Warm breakfast products rooted in indigenous African ingredients and made for modern mornings.',
+        'slogan' => 'Breakfast inspired by nature, crafted with love.',
+        'description' => 'Warm breakfast products inspired by nature, crafted with love, and rooted in indigenous African ingredients.',
         'home_aria_label' => 'Vipta Health Foods home',
         'logo' => 'images/logo.png',
         'logo_alt' => 'Vipta Global logo',
@@ -42,7 +42,7 @@ return [
     'footer' => [
         'quick_links_heading' => 'Quick Links',
         'contact_heading' => 'Contact',
-        'summary' => 'Naturally Healthy. Warm breakfast products rooted in indigenous African ingredients and made for modern mornings.',
+        'summary' => 'Breakfast inspired by nature, crafted with love. Warm breakfast products rooted in indigenous African ingredients and made for modern mornings.',
         'quick_links' => [
             ['label' => 'Home', 'route' => 'home'],
             ['label' => 'Products', 'route' => 'products'],
@@ -60,10 +60,11 @@ return [
     'pages' => [
         'home' => [
             'title' => 'Home',
-            'meta_description' => 'Meet Miracle Breakfast Cookie, a warm and natural breakfast cookie rooted in indigenous African ingredients and everyday convenience.',
+            'meta_description' => 'Meet Miracle Breakfast Cookie: breakfast inspired by nature, crafted with love, and rooted in indigenous African ingredients.',
             'hero' => [
                 'eyebrow' => 'Vipta Health Foods',
                 'heading' => 'A Breakfast Cookie Rooted in African Nutrition',
+                'tagline' => 'Breakfast inspired by nature, crafted with love.',
                 'intro' => 'Meet the Miracle Breakfast Cookie: a warm, convenient morning bite inspired by indigenous African ingredients, modern routines, and the simple joy of starting the day well.',
                 'image' => 'images/vipta/hero-cookie.png',
                 'image_alt' => 'Breakfast cookies served with fruit and a green breakfast drink on a warm morning table',
@@ -73,11 +74,11 @@ return [
             'product_intro' => [
                 'eyebrow' => 'Miracle Breakfast Cookie',
                 'heading' => 'A small morning ritual with deep roots.',
-                'body' => 'The Miracle Breakfast Cookie is being shaped as a practical breakfast alternative for people who want something natural, satisfying, and connected to African food heritage. Matohwe is the featured ingredient, supported by familiar indigenous fruits and a gentle ginger note.',
+                'body' => 'The Miracle Breakfast Cookie is a nutritious breakfast snack with Matohwe powder as the lead ingredient, supported by indigenous fruit notes such as Mazhanje and Tsubvu. It is shaped for people who want something natural, satisfying, and connected to African food heritage.',
                 'highlights' => [
-                    'Made for busy mornings',
+                    'Breakfast inspired by nature, crafted with love',
+                    'Very high protein and fibre highlights',
                     'Inspired by indigenous ingredients',
-                    'Warm, edible, and customer-friendly',
                 ],
             ],
             'ingredients_preview' => [
@@ -94,8 +95,8 @@ return [
                         'description' => 'Easy to carry, easy to understand, and made for mornings when time is short.',
                     ],
                     [
-                        'title' => 'Natural Nutrition Story',
-                        'description' => 'A food-first wellness message rooted in simple ingredients and everyday nourishment.',
+                        'title' => 'Nutrition-Led Story',
+                        'description' => 'Client-supplied highlights include protein, fibre, amino acids, vitamins, and minerals.',
                     ],
                     [
                         'title' => 'African Ingredient Heritage',
@@ -225,17 +226,17 @@ return [
         ],
         'products' => [
             'title' => 'Products',
-            'meta_description' => 'Explore the Miracle Breakfast Cookie and its indigenous African ingredient story.',
+            'meta_description' => 'Explore the Miracle Breakfast Cookie, a nutritious snack with Matohwe powder, fibre, protein, vitamins, minerals, and indigenous fruit inspiration.',
             'hero' => [
                 'eyebrow' => 'Miracle Breakfast Cookie',
-                'heading' => 'A breakfast cookie made for modern mornings.',
-                'intro' => 'A warm, convenient cookie concept rooted in indigenous African ingredients, with Matohwe at the heart of the story and a flavour profile made for everyday breakfast routines.',
+                'heading' => 'A nutritious breakfast cookie made for modern mornings.',
+                'intro' => 'A premium, nutritious breakfast snack with Matohwe powder as the primary base, supported by indigenous fruit inspiration and crafted for everyday breakfast routines.',
                 'image' => 'images/vipta/hero-cookie.png',
                 'image_alt' => 'Breakfast cookies served with fruit and a green breakfast drink',
                 'highlights' => [
-                    'Breakfast-friendly format',
-                    'Matohwe-led ingredient story',
-                    'Built for order and stockist enquiries',
+                    '27% protein highlight',
+                    '45% fibre highlight',
+                    'Made in Zimbabwe',
                 ],
             ],
             'primary_cta' => 'primary',
@@ -243,21 +244,21 @@ return [
             'overview' => [
                 'eyebrow' => 'What it is',
                 'heading' => 'A practical breakfast bite with roots.',
-                'body' => 'The Miracle Breakfast Cookie is being shaped as a customer-friendly breakfast product for people who want something easy to carry, natural in feel, and connected to African food heritage. It is food-first, not a medicine, and all final nutritional claims should be checked before launch.',
+                'body' => 'The Miracle Breakfast Cookie is positioned as a premium, nutritious snack with Matohwe powder as the primary base, supplemented by indigenous fruits such as Mazhanje and Tsubvu. It is designed to offer a healthier everyday food alternative while keeping the customer message food-first and easy to understand.',
                 'items' => [
-                    'Easy to pack for school, work, travel, or shop shelves',
-                    'Designed around recognisable ingredients and warm flavour cues',
-                    'Positioned for households, retailers, and partner conversations',
+                    'Designed to deliver high nutritional value through protein, fibre, and micronutrient highlights',
+                    'Built around recognisable indigenous ingredients and warm breakfast flavour cues',
+                    'Prepared for quality, safety, and packaging standards suitable for local and regional markets',
                 ],
             ],
             'featured_ingredient' => [
                 'eyebrow' => 'Featured ingredient',
                 'heading' => 'Matohwe gives the cookie its heritage anchor.',
-                'body' => 'Matohwe is the lead ingredient in the Miracle Breakfast Cookie story. It helps the product feel rooted in indigenous fruit knowledge while keeping the customer message simple: a familiar local ingredient brought into a modern breakfast format.',
+                'body' => 'Matohwe, also known as baobab, is the lead ingredient in the Miracle Breakfast Cookie story. It helps the product feel rooted in indigenous fruit knowledge while keeping the customer message simple: a familiar local ingredient brought into a modern breakfast format.',
                 'points' => [
                     'Connects the cookie to African fruit heritage',
+                    'Supported by indigenous fruit notes including Mazhanje and Tsubvu',
                     'Supports a local value-addition story',
-                    'Gives customers a clear reason to remember the product',
                 ],
             ],
             'ingredients_intro' => [
@@ -290,39 +291,54 @@ return [
                 ],
             ],
             'nutrition' => [
-                'eyebrow' => 'Careful nutrition highlights',
-                'heading' => 'Nutrition language that waits for proof.',
-                'body' => 'These highlights are set up for final product values. Numeric claims stay hidden until they are marked as verified in config.',
+                'eyebrow' => 'Product nutritional facts',
+                'heading' => 'Nutritional details worth noticing.',
+                'body' => 'These client-supplied highlights should be checked against the final approved nutrition label before packaging or regulated claims are published.',
                 'items' => [
                     [
-                        'label' => 'Fibre',
-                        'description' => 'Final fibre language should be based on confirmed recipe analysis.',
-                        'value' => null,
-                        'unit' => null,
+                        'label' => 'Very high protein',
+                        'description' => 'Client-supplied product fact for the Miracle Breakfast Cookie.',
+                        'value' => 27,
+                        'unit' => '%',
                         'verified' => false,
                     ],
                     [
-                        'label' => 'Protein',
-                        'description' => 'Protein wording should only become specific once the final recipe is tested.',
-                        'value' => null,
-                        'unit' => null,
+                        'label' => 'High fibre',
+                        'description' => 'Client-supplied product fact for the Miracle Breakfast Cookie.',
+                        'value' => 45,
+                        'unit' => '%',
                         'verified' => false,
                     ],
                     [
-                        'label' => 'Added sugar',
-                        'description' => 'Sugar claims should match the approved ingredient deck and nutrition panel.',
-                        'value' => null,
-                        'unit' => null,
+                        'label' => 'Amino acids',
+                        'description' => 'The supplied product details list 17 amino acids.',
+                        'value' => 17,
+                        'unit' => '',
                         'verified' => false,
                     ],
                     [
-                        'label' => 'Artificial additives',
-                        'description' => 'Use this claim publicly only after the final recipe and supplier declarations confirm it.',
+                        'label' => 'Vitamins',
+                        'description' => 'The supplied list includes vitamins A, B1, B2, C, and E.',
+                        'value' => 5,
+                        'unit' => '',
+                        'verified' => false,
+                    ],
+                    [
+                        'label' => 'Minerals',
+                        'description' => 'The supplied list includes iron, zinc, magnesium, calcium, potassium, and phosphorus.',
+                        'value' => 6,
+                        'unit' => '',
+                        'verified' => false,
+                    ],
+                    [
+                        'label' => 'Phytochemicals',
+                        'description' => 'The supplied product notes mention phytochemicals with antioxidant properties.',
                         'value' => null,
                         'unit' => null,
                         'verified' => false,
                     ],
                 ],
+                'footnote' => 'Nutrition figures are shown as client-provided product details and should be verified against the final approved recipe and label.',
             ],
             'variants' => [
                 'eyebrow' => 'Flavours',
@@ -641,12 +657,12 @@ return [
     ],
 
     'benefits' => [
-        ['title' => 'Natural Ingredients', 'description' => 'Made to celebrate simple, recognisable ingredients.'],
+        ['title' => 'Natural Ingredients', 'description' => 'Made to celebrate simple, recognisable indigenous ingredients.'],
         ['title' => 'Indigenous Ingredients', 'description' => 'Inspired by African fruit heritage and everyday nourishment.'],
-        ['title' => 'High Fibre', 'description' => 'Nutrition wording will stay careful until final product values are verified.'],
-        ['title' => 'Protein Rich', 'description' => 'Only verified nutritional numbers should be added before launch.'],
+        ['title' => 'High Fibre', 'description' => 'Client-supplied product detail highlights 45% fibre.'],
+        ['title' => 'Very High Protein', 'description' => 'Client-supplied product detail highlights 27% protein.'],
         ['title' => 'Supports Local Farmers', 'description' => 'A sourcing story that can grow with farmer partnerships.'],
-        ['title' => 'No Artificial Additives', 'description' => 'Use only if the final recipe confirms this claim.'],
+        ['title' => 'Vitamins and Minerals', 'description' => 'Supplied details list 5 vitamins and 6 minerals.'],
     ],
 
     'ingredients' => [

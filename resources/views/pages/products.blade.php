@@ -141,17 +141,28 @@
                 <div class="grid gap-4 sm:grid-cols-2">
                     @foreach (($nutrition['items'] ?? []) as $item)
                         <article class="rounded-lg border border-white/15 bg-white/8 p-6">
-                            @if (($item['verified'] ?? false) && filled($item['value'] ?? null))
+                            @if (filled($item['value'] ?? null))
                                 <p class="font-display text-4xl font-semibold text-vipta-gold">{{ $item['value'] }}{{ $item['unit'] ?? '' }}</p>
                                 <p class="mt-1 text-sm font-bold uppercase tracking-[0.14em] text-white/70">{{ $item['label'] ?? '' }}</p>
+                                @if (! ($item['verified'] ?? false))
+                                    <p class="mt-3 inline-flex rounded-full border border-white/15 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.12em] text-white/60">
+                                        Client-provided
+                                    </p>
+                                @endif
                             @else
-                                <p class="text-xs font-bold uppercase tracking-[0.14em] text-vipta-gold">Verification pending</p>
+                                <p class="text-xs font-bold uppercase tracking-[0.14em] text-vipta-gold">{{ ($item['verified'] ?? false) ? 'Nutrition note' : 'Client-provided' }}</p>
                                 <h3 class="mt-3 font-display text-2xl font-semibold">{{ $item['label'] ?? '' }}</h3>
                             @endif
                             <p class="mt-3 text-sm leading-6 text-white/72">{{ $item['description'] ?? '' }}</p>
                         </article>
                     @endforeach
                 </div>
+
+                @if (filled($nutrition['footnote'] ?? null))
+                    <p class="rounded-lg border border-white/15 bg-white/8 p-5 text-sm leading-6 text-white/70">
+                        {{ $nutrition['footnote'] }}
+                    </p>
+                @endif
             </div>
         </div>
     </section>
