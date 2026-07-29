@@ -12,14 +12,14 @@
 
 @section('title', $page['title'] ?? 'About')
 @section('meta_description', $page['meta_description'] ?? '')
-@section('og_image', $hero['image'] ?? 'images/vipta/about-forest.png')
+@section('og_image', $hero['image'] ?? 'images/vipta/product-ingredients-board.png')
 @section('og_image_alt', $hero['image_alt'] ?? '')
 
 @section('content')
     <section class="relative overflow-hidden bg-vipta-cream">
         <div class="absolute inset-0">
             <img
-                src="{{ asset($hero['image'] ?? 'images/vipta/about-forest.png') }}"
+                src="{{ asset($hero['image'] ?? 'images/vipta/product-ingredients-board.png') }}"
                 alt="{{ $hero['image_alt'] ?? '' }}"
                 width="1400"
                 height="1400"
@@ -69,7 +69,7 @@
         <div class="mx-auto grid max-w-7xl items-center gap-12 px-5 sm:px-8 min-[900px]:grid-cols-[0.9fr_1fr] lg:px-12">
             <div class="overflow-hidden rounded-2xl border border-vipta-border shadow-[var(--shadow-vipta-soft)]">
                 <img
-                    src="{{ asset($community['image'] ?? 'images/vipta/heritage-landscape.png') }}"
+                    src="{{ asset($community['image'] ?? 'images/vipta/cowpeas.jpg') }}"
                     alt="{{ $community['image_alt'] ?? '' }}"
                     width="1400"
                     height="1120"
