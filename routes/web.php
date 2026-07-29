@@ -9,6 +9,8 @@ Route::view('/about', 'pages.about')->name('about');
 
 Route::view('/products', 'pages.products')->name('products');
 
+Route::view('/benefits', 'pages.benefits')->name('benefits');
+
 Route::view('/our-story', 'pages.our-story')->name('our-story');
 
 Route::view('/impact', 'pages.impact')->name('impact');

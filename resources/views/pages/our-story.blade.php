@@ -4,6 +4,7 @@
     $quote = $page['quote'] ?? [];
     $reclaiming = $page['reclaiming'] ?? [];
     $fruitToCookie = $page['fruit_to_cookie'] ?? [];
+    $expandedStory = $page['expanded_story'] ?? [];
     $pathway = $page['pathway'] ?? [];
     $closing = $page['closing'] ?? [];
 @endphp
@@ -89,6 +90,28 @@
             </div>
         </div>
     </section>
+
+    @if ($expandedStory !== [])
+        <section class="bg-vipta-cream py-16 lg:py-24">
+            <div class="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
+                <div class="grid gap-10 min-[900px]:grid-cols-[0.85fr_1fr]">
+                    <x-site.section-heading :eyebrow="$expandedStory['eyebrow'] ?? ''" :heading="$expandedStory['heading'] ?? ''" />
+
+                    <div class="space-y-5 text-base leading-8 text-vipta-muted">
+                        @foreach (($expandedStory['body'] ?? []) as $paragraph)
+                            <p>{{ $paragraph }}</p>
+                        @endforeach
+                    </div>
+                </div>
+
+                <div class="mt-12 grid gap-5 md:grid-cols-3">
+                    @foreach (($expandedStory['cards'] ?? []) as $card)
+                        <x-site.text-card :title="$card['title'] ?? ''" :body="$card['description'] ?? ''" variant="white" />
+                    @endforeach
+                </div>
+            </div>
+        </section>
+    @endif
 
     <section class="border-y border-vipta-border bg-vipta-sage py-16 lg:py-24">
         <div class="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">

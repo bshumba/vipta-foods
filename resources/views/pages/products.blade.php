@@ -21,7 +21,7 @@
 
 @section('title', $page['title'] ?? 'Products')
 @section('meta_description', $page['meta_description'] ?? '')
-@section('og_image', $hero['image'] ?? 'images/vipta/hero-cookie.png')
+@section('og_image', $hero['image'] ?? 'images/vipta/single-cookie.png')
 @section('og_image_alt', $hero['image_alt'] ?? '')
 
 @section('content')
@@ -56,16 +56,32 @@
             </div>
 
             <div class="relative">
-                <div class="overflow-hidden rounded-2xl border border-vipta-border bg-vipta-paper shadow-[var(--shadow-vipta-soft)]">
-                    <img
-                        src="{{ asset($hero['image'] ?? 'images/vipta/hero-cookie.png') }}"
-                        alt="{{ $hero['image_alt'] ?? '' }}"
-                        width="1400"
-                        height="1050"
-                        fetchpriority="high"
-                        decoding="async"
-                        class="aspect-[4/3] w-full object-cover"
-                    >
+                <div class="grid gap-4">
+                    <div class="overflow-hidden rounded-2xl border border-vipta-border bg-vipta-paper p-5 shadow-[var(--shadow-vipta-soft)]">
+                        <img
+                            src="{{ asset($hero['image'] ?? 'images/vipta/single-cookie.png') }}"
+                            alt="{{ $hero['image_alt'] ?? '' }}"
+                            width="1400"
+                            height="1050"
+                            fetchpriority="high"
+                            decoding="async"
+                            class="aspect-[4/3] w-full object-contain"
+                        >
+                    </div>
+
+                    @if (filled($hero['secondary_image'] ?? null))
+                        <div class="overflow-hidden rounded-2xl border border-vipta-border bg-vipta-paper p-5 shadow-[var(--shadow-vipta-soft)]">
+                            <img
+                                src="{{ asset($hero['secondary_image']) }}"
+                                alt="{{ $hero['secondary_image_alt'] ?? '' }}"
+                                width="1400"
+                                height="1400"
+                                loading="lazy"
+                                decoding="async"
+                                class="aspect-[16/9] w-full object-cover"
+                            >
+                        </div>
+                    @endif
                 </div>
             </div>
         </div>
@@ -100,7 +116,7 @@
 
                 <div class="overflow-hidden rounded-2xl border border-vipta-border shadow-[var(--shadow-vipta-soft)]">
                     <img
-                        src="{{ asset($ingredientsIntro['image'] ?? 'images/vipta/product-ingredients-board.png') }}"
+                        src="{{ asset($ingredientsIntro['image'] ?? 'images/vipta/sunflower-seed.jpg') }}"
                         alt="{{ $ingredientsIntro['image_alt'] ?? '' }}"
                         width="1400"
                         height="1050"

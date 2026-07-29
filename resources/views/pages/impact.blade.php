@@ -12,7 +12,7 @@
 
 @section('title', $page['title'] ?? 'Impact')
 @section('meta_description', $page['meta_description'] ?? '')
-@section('og_image', $hero['image'] ?? 'images/vipta/heritage-landscape.png')
+@section('og_image', $hero['image'] ?? 'images/vipta/cowpeas.jpg')
 @section('og_image_alt', $hero['image_alt'] ?? '')
 
 @section('content')
@@ -37,7 +37,7 @@
             <div class="relative">
                 <div class="overflow-hidden rounded-2xl border border-white/15 bg-white/8 shadow-[var(--shadow-vipta-soft)]">
                     <img
-                        src="{{ asset($hero['image'] ?? 'images/vipta/heritage-landscape.png') }}"
+                        src="{{ asset($hero['image'] ?? 'images/vipta/cowpeas.jpg') }}"
                         alt="{{ $hero['image_alt'] ?? '' }}"
                         width="1400"
                         height="1050"

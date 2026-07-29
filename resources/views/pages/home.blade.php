@@ -19,7 +19,7 @@
 
 @section('title', $page['title'] ?? 'Home')
 @section('meta_description', $page['meta_description'] ?? '')
-@section('og_image', $hero['image'] ?? 'images/vipta/hero-cookie.png')
+@section('og_image', $hero['image'] ?? 'images/vipta/single-cookie.png')
 @section('og_image_alt', $hero['image_alt'] ?? '')
 
 @section('content')
@@ -49,17 +49,33 @@
             </div>
 
             <div class="relative">
-                <div class="overflow-hidden rounded-2xl border border-vipta-border bg-vipta-paper shadow-[var(--shadow-vipta-soft)]">
-                    <img
-                        src="{{ asset($hero['image'] ?? 'images/vipta/hero-cookie.png') }}"
-                        alt="{{ $hero['image_alt'] ?? '' }}"
-                        width="1400"
-                        height="1050"
-                        fetchpriority="high"
-                        decoding="async"
-                        class="aspect-[4/3] w-full object-cover"
-                    >
-                </div>
+                <figure class="relative mx-auto flex max-w-xl flex-col items-center">
+                    @if (filled($hero['image_badge'] ?? null))
+                        <figcaption class="relative z-10 max-w-md rounded-full border border-vipta-border/80 bg-vipta-paper/90 px-5 py-3 text-center text-sm font-bold uppercase tracking-[0.12em] text-vipta-green shadow-sm backdrop-blur">
+                            {{ $hero['image_badge'] }}
+                        </figcaption>
+                    @endif
+                    <div class="-mt-3 flex h-[23rem] w-full items-center justify-center overflow-hidden sm:h-[29rem] sm:overflow-visible min-[900px]:h-[30rem]">
+                        <img
+                            src="{{ asset($hero['image'] ?? 'images/vipta/single-cookie.png') }}"
+                            alt="{{ $hero['image_alt'] ?? '' }}"
+                            width="1400"
+                            height="1050"
+                            fetchpriority="high"
+                            decoding="async"
+                            class="h-[26rem] w-auto max-w-[calc(100vw-2.5rem)] object-contain drop-shadow-[0_28px_42px_rgba(20,82,37,0.16)] sm:h-[38rem] sm:max-w-none min-[900px]:h-[40rem]"
+                        >
+                    </div>
+                </figure>
+
+                @if (filled($hero['comparison'] ?? null))
+                    <div class="-mt-3 rounded-2xl border border-vipta-border bg-vipta-green px-5 py-4 text-center shadow-[var(--shadow-vipta-soft)] sm:-mt-5">
+                        <p class="text-xs font-bold uppercase tracking-[0.14em] text-vipta-gold">Breakfast comparison</p>
+                        <p class="mt-2 font-display text-2xl font-semibold leading-tight text-white sm:text-3xl">
+                            {{ $hero['comparison'] }}
+                        </p>
+                    </div>
+                @endif
             </div>
         </div>
 
@@ -133,7 +149,7 @@
             </div>
             <div class="overflow-hidden rounded-2xl border border-vipta-border shadow-[var(--shadow-vipta-soft)]">
                 <img
-                    src="{{ asset($storyPreview['image'] ?? 'images/vipta/heritage-landscape.png') }}"
+                    src="{{ asset($storyPreview['image'] ?? 'images/vipta/sunflower-seed.jpg') }}"
                     alt="{{ $storyPreview['image_alt'] ?? '' }}"
                     width="1400"
                     height="1120"
