@@ -68,7 +68,7 @@ return [
                 'heading' => 'Miracle Breakfast Cookie',
                 'tagline' => 'Breakfast Rooted in Natural Nutrition',
                 'intro' => 'Meet the Miracle Breakfast Cookie: a warm, convenient morning bite inspired by indigenous African ingredients, modern routines, and the simple joy of starting the day well.',
-                'image' => 'images/vipta/hero-section.png',
+                'image' => 'images/vipta/hero-section.jpeg',
                 'image_alt' => 'Miracle Breakfast Cookies product poster with cookie, nutrition highlights, and breakfast comparison',
                 'image_badge' => null,
                 'comparison' => null,
