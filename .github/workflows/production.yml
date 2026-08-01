@@ -9,8 +9,8 @@ on:
 env:
   IMAGE_NAME: ${{ secrets.APP_NAME }}
   CONTAINER_NAME: ${{ secrets.APP_NAME }}-production
-  PRODUCTION_ENV_FILE: /home/ubuntu/vipta-foods-production.env
-  PRODUCTION_STORAGE_PATH: /home/ubuntu/vipta-foods-storage-production
+  PRODUCTION_ENV_FILE: /opt/apps/vipta-foods/production.env
+  PRODUCTION_STORAGE_PATH: /opt/apps/vipta-foods/storage-production
   PRODUCTION_PORT: 8000
   CONTAINER_PORT: 10000
 
@@ -106,5 +106,5 @@ jobs:
               --restart unless-stopped \
               --env-file "${{ env.PRODUCTION_ENV_FILE }}" \
               -v "${{ env.PRODUCTION_STORAGE_PATH }}:/var/www/html/storage/app/public" \
-              -p "${{ env.PRODUCTION_PORT }}:${{ env.CONTAINER_PORT }}" \
+              -p "127.0.0.1:${{ env.PRODUCTION_PORT }}:${{ env.CONTAINER_PORT }}" \
               "$IMAGE"
