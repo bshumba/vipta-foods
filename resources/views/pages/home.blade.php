@@ -19,7 +19,7 @@
 
 @section('title', $page['title'] ?? 'Home')
 @section('meta_description', $page['meta_description'] ?? '')
-@section('og_image', $hero['image'] ?? 'images/vipta/single-cookie.png')
+@section('og_image', $hero['image'] ?? 'images/vipta/hero-section.png')
 @section('og_image_alt', $hero['image_alt'] ?? '')
 
 @section('content')
@@ -49,21 +49,21 @@
             </div>
 
             <div class="relative">
-                <figure class="relative mx-auto flex max-w-xl flex-col items-center">
+                <figure class="relative mx-auto flex w-full max-w-md flex-col items-center min-[900px]:max-w-lg">
                     @if (filled($hero['image_badge'] ?? null))
                         <figcaption class="relative z-10 max-w-md rounded-full border border-vipta-border/80 bg-vipta-paper/90 px-5 py-3 text-center text-sm font-bold uppercase tracking-[0.12em] text-vipta-green shadow-sm backdrop-blur">
                             {{ $hero['image_badge'] }}
                         </figcaption>
                     @endif
-                    <div class="-mt-3 flex h-[23rem] w-full items-center justify-center overflow-hidden sm:h-[29rem] sm:overflow-visible min-[900px]:h-[30rem]">
+                    <div class="w-full overflow-hidden rounded-full border border-vipta-border bg-vipta-paper p-3 shadow-[var(--shadow-vipta-soft)]">
                         <img
-                            src="{{ asset($hero['image'] ?? 'images/vipta/single-cookie.png') }}"
+                            src="{{ asset($hero['image'] ?? 'images/vipta/hero-section.png') }}"
                             alt="{{ $hero['image_alt'] ?? '' }}"
-                            width="1400"
-                            height="1050"
+                            width="1024"
+                            height="1536"
                             fetchpriority="high"
                             decoding="async"
-                            class="h-[26rem] w-auto max-w-[calc(100vw-2.5rem)] object-contain drop-shadow-[0_28px_42px_rgba(20,82,37,0.16)] sm:h-[38rem] sm:max-w-none min-[900px]:h-[40rem]"
+                            class="block aspect-square h-auto w-full max-w-full rounded-full object-cover object-center"
                         >
                     </div>
                 </figure>
