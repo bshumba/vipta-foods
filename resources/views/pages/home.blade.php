@@ -19,7 +19,7 @@
 
 @section('title', $page['title'] ?? 'Home')
 @section('meta_description', $page['meta_description'] ?? '')
-@section('og_image', $hero['image'] ?? 'images/vipta/hero-section.png')
+@section('og_image', $hero['image'] ?? 'images/vipta/hero-section.jpeg')
 @section('og_image_alt', $hero['image_alt'] ?? '')
 
 @section('content')
@@ -49,21 +49,21 @@
             </div>
 
             <div class="relative">
-                <figure class="relative mx-auto flex w-full max-w-md flex-col items-center min-[900px]:max-w-lg">
+                <figure class="relative mx-auto flex w-[calc(100vw_-_1.5rem)] max-w-[34rem] flex-col items-center sm:w-full sm:max-w-md min-[900px]:max-w-xl">
                     @if (filled($hero['image_badge'] ?? null))
                         <figcaption class="relative z-10 max-w-md rounded-full border border-vipta-border/80 bg-vipta-paper/90 px-5 py-3 text-center text-sm font-bold uppercase tracking-[0.12em] text-vipta-green shadow-sm backdrop-blur">
                             {{ $hero['image_badge'] }}
                         </figcaption>
                     @endif
-                    <div class="w-full overflow-hidden rounded-full border border-vipta-border bg-vipta-paper p-3 shadow-[var(--shadow-vipta-soft)]">
+                    <div class="aspect-square w-full overflow-visible rounded-full border border-transparent bg-transparent p-0 shadow-[var(--shadow-vipta-soft)]">
                         <img
-                            src="{{ asset($hero['image'] ?? 'images/vipta/hero-section.png') }}"
+                            src="{{ asset($hero['image'] ?? 'images/vipta/hero-section.jpeg') }}"
                             alt="{{ $hero['image_alt'] ?? '' }}"
-                            width="1024"
-                            height="1536"
+                            width="1254"
+                            height="1254"
                             fetchpriority="high"
                             decoding="async"
-                            class="block aspect-square h-auto w-full max-w-full rounded-full object-cover object-center"
+                            class="block h-full w-full max-w-full object-contain object-center"
                         >
                     </div>
                 </figure>
