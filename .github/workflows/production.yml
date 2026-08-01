@@ -1,0 +1,107 @@
+name: vipta-foods-production
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - production
+
+env:
+  IMAGE_NAME: ${{ secrets.APP_NAME }}
+  CONTAINER_NAME: ${{ secrets.APP_NAME }}-production
+  PRODUCTION_ENV_FILE: /home/ubuntu/vipta-foods-production.env
+  PRODUCTION_STORAGE_PATH: /home/ubuntu/vipta-foods-storage-production
+  PRODUCTION_PORT: 8000
+  CONTAINER_PORT: 10000
+
+jobs:
+  docker:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v3
+
+      - name: Setup Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Login to Docker
+        uses: docker/login-action@v3
+        with:
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASS }}
+
+      - name: Check required secrets
+        env:
+          APP_NAME: ${{ secrets.APP_NAME }}
+          DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+          DOCKER_PASS: ${{ secrets.DOCKER_PASS }}
+          APP_KEY: ${{ secrets.APP_KEY }}
+          APP_URL: ${{ secrets.APP_URL }}
+          HOST: ${{ secrets.HOST }}
+          HOST_USER: ${{ secrets.HOST_USER }}
+          SSH_PASS: ${{ secrets.SSH_PASS }}
+        run: |
+          set -e
+          test -n "$APP_NAME" || (echo "Missing APP_NAME" && exit 1)
+          test -n "$DOCKER_USERNAME" || (echo "Missing DOCKER_USERNAME" && exit 1)
+          test -n "$DOCKER_PASS" || (echo "Missing DOCKER_PASS" && exit 1)
+          test -n "$APP_KEY" || (echo "Missing APP_KEY" && exit 1)
+          test -n "$APP_URL" || (echo "Missing APP_URL" && exit 1)
+          test -n "$HOST" || (echo "Missing HOST" && exit 1)
+          test -n "$HOST_USER" || (echo "Missing HOST_USER" && exit 1)
+          test -n "$SSH_PASS" || (echo "Missing SSH_PASS" && exit 1)
+
+      - name: Build and Push
+        uses: docker/build-push-action@v6
+        with:
+          no-cache: true
+          push: true
+          tags: ${{ secrets.DOCKER_USERNAME }}/${{ env.IMAGE_NAME }}:${{ github.sha }}
+
+  deployment:
+    runs-on: ubuntu-latest
+    needs: docker
+    steps:
+      - name: Deploy production container
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.HOST_USER }}
+          key: ${{ secrets.SSH_PASS }}
+          port: 22
+          script: |
+            set -e
+
+            mkdir -p "${{ env.PRODUCTION_STORAGE_PATH }}"
+
+            cat > "${{ env.PRODUCTION_ENV_FILE }}" <<'ENV'
+            APP_NAME=${{ secrets.APP_NAME }}
+            APP_ENV=production
+            APP_KEY=${{ secrets.APP_KEY }}
+            APP_DEBUG=false
+            APP_URL=${{ secrets.APP_URL }}
+            LOG_CHANNEL=stderr
+            LOG_LEVEL=error
+
+            SESSION_DRIVER=file
+            CACHE_STORE=file
+            QUEUE_CONNECTION=sync
+            FILESYSTEM_DISK=local
+            ENV
+
+            IMAGE="${{ secrets.DOCKER_USERNAME }}/${{ env.IMAGE_NAME }}:${{ github.sha }}"
+
+            docker pull "$IMAGE"
+            docker rm -f "${{ env.CONTAINER_NAME }}" || true
+
+            docker run \
+              -d \
+              --name "${{ env.CONTAINER_NAME }}" \
+              --restart unless-stopped \
+              --env-file "${{ env.PRODUCTION_ENV_FILE }}" \
+              -v "${{ env.PRODUCTION_STORAGE_PATH }}:/var/www/html/storage/app/public" \
+              -p "${{ env.PRODUCTION_PORT }}:${{ env.CONTAINER_PORT }}" \
+              "$IMAGE"
