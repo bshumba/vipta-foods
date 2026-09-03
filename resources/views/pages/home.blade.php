@@ -155,30 +155,30 @@
         </div>
     </section>
 
-    <section class="bg-vipta-green py-16 text-white lg:py-24">
-        <div class="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
-            <x-site.section-heading :eyebrow="$impactPreview['eyebrow'] ?? ''" :heading="$impactPreview['heading'] ?? ''"
-                :body="$impactPreview['body'] ?? ''" theme="dark" class="max-w-3xl" />
+    <!--section class="bg-vipta-green py-16 text-white lg:py-24">
+                <div class="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
+                    <x-site.section-heading :eyebrow="$impactPreview['eyebrow'] ?? ''" :heading="$impactPreview['heading'] ?? ''"
+                        :body="$impactPreview['body'] ?? ''" theme="dark" class="max-w-3xl" />
 
-            <div class="mt-12 grid gap-5 md:grid-cols-3">
-                @foreach (($impactPreview['items'] ?? []) as $item)
-                    <x-site.text-card :title="$item['title'] ?? ''" :body="$item['description'] ?? ''" variant="dark" />
-                @endforeach
+                    <div class="mt-12 grid gap-5 md:grid-cols-3">
+                        @foreach (($impactPreview['items'] ?? []) as $item)
+                            <x-site.text-card :title="$item['title'] ?? ''" :body="$item['description'] ?? ''" variant="dark" />
+                        @endforeach
+                    </div>
+                </div>
+            </section-->
+
+    <!--section class="bg-vipta-sage py-16 lg:py-24">
+            <div class="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
+                <x-site.section-heading :eyebrow="$testimonialIntro['eyebrow'] ?? ''" :heading="$testimonialIntro['heading'] ?? ''" align="center" />
+
+                <div class="mt-12 grid gap-5 lg:grid-cols-3">
+                    @foreach ($testimonials as $testimonial)
+                        <x-site.testimonial-card :testimonial="$testimonial" />
+                    @endforeach
+                </div>
             </div>
-        </div>
-    </section>
-
-    <section class="bg-vipta-sage py-16 lg:py-24">
-        <div class="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
-            <x-site.section-heading :eyebrow="$testimonialIntro['eyebrow'] ?? ''" :heading="$testimonialIntro['heading'] ?? ''" align="center" />
-
-            <div class="mt-12 grid gap-5 lg:grid-cols-3">
-                @foreach ($testimonials as $testimonial)
-                    <x-site.testimonial-card :testimonial="$testimonial" />
-                @endforeach
-            </div>
-        </div>
-    </section>
+        </section-->
 
     <x-site.cta-section :heading="$finalCta['heading'] ?? ''" :body="$finalCta['body'] ?? ''"
         :primary-label="$finalCta['cta_label'] ?? 'Contact Us'" :primary-route="$finalCta['cta_route'] ?? 'contact'"
