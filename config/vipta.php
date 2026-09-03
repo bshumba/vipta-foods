@@ -70,7 +70,7 @@ return [
                 'intro' => 'Meet the Miracle Breakfast Cookie: a warm, convenient morning bite inspired by indigenous African ingredients, modern routines, and the simple joy of starting the day well.',
                 'image' => 'images/vipta/single-cookie.png',
                 'image_alt' => 'One Miracle Breakfast Cookie on a white plate',
-                'image_badge' => 'inspired by nature and crafted with love',
+                'image_badge' => 'Breakfast inspired by nature crafted with love',
                 'comparison' => '1 Miracle Cookie = 4 slices of bread + 1 fried egg',
             ],
             'primary_cta' => 'secondary',
@@ -92,7 +92,7 @@ return [
             ],
             'why_choose' => [
                 'eyebrow' => 'Why Miracle Cookie',
-                'heading' => 'Designed for modern mornings.',
+                'heading' => 'A nutritious breakfast made for modern mornings.',
                 'items' => [
                     [
                         'title' => 'Convenient Breakfast',
@@ -100,7 +100,7 @@ return [
                     ],
                     [
                         'title' => 'Nutrition-Led Story',
-                        'description' => 'Client-supplied highlights include protein, fibre, amino acids, vitamins, and minerals.',
+                        'description' => 'Client-supplied highlights include protein, fibre, vitamins, and minerals.',
                     ],
                     [
                         'title' => 'Rooted in Natural Nutrition',
@@ -116,8 +116,8 @@ return [
                 'eyebrow' => 'Our story',
                 'heading' => 'Rooted in heritage. Made for the table.',
                 'body' => 'Vipta Health Foods is building a brand around the value of local ingredients, good mornings, and the farmers and communities behind the harvest.',
-                'image' => 'images/vipta/sunflower-seed.jpg',
-                'image_alt' => 'Close-up of sunflower seeds as a natural ingredient',
+                'image' => 'images/vipta/Matohwe.jpeg',
+                'image_alt' => 'Close-up of Matohwe as a natural ingredient',
                 'cta_label' => 'Read Our Story',
                 'cta_route' => 'our-story',
             ],
