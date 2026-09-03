@@ -19,12 +19,13 @@
 
 @section('title', $page['title'] ?? 'Home')
 @section('meta_description', $page['meta_description'] ?? '')
-@section('og_image', $hero['image'] ?? 'images/vipta/hero-section.jpeg')
+@section('og_image', $hero['image'] ?? 'images/vipta/single-cookie.png')
 @section('og_image_alt', $hero['image_alt'] ?? '')
 
 @section('content')
     <section class="bg-vipta-cream">
-        <div class="mx-auto grid min-h-[700px] max-w-7xl items-center gap-12 px-5 py-16 sm:px-8 min-[900px]:grid-cols-[1fr_0.92fr] lg:min-h-[760px] lg:px-12 lg:py-24">
+        <div
+            class="mx-auto grid min-h-[700px] max-w-7xl items-center gap-12 px-5 py-16 sm:px-8 min-[900px]:grid-cols-[1fr_0.92fr] lg:min-h-[760px] lg:px-12 lg:py-24">
             <div class="max-w-2xl">
                 <p class="text-xs font-bold uppercase tracking-[0.18em] text-vipta-earth">{{ $hero['eyebrow'] ?? '' }}</p>
                 @if (filled($hero['tagline'] ?? null))
@@ -32,45 +33,42 @@
                         {{ $hero['tagline'] }}
                     </p>
                 @endif
-                <h1 class="mt-5 font-display text-4xl font-bold leading-[1.04] text-vipta-green sm:text-6xl min-[900px]:text-5xl lg:text-7xl">
+                <h1
+                    class="mt-5 font-display text-4xl font-bold leading-[1.04] text-vipta-green sm:text-6xl min-[900px]:text-5xl lg:text-7xl">
                     {{ $hero['heading'] ?? '' }}
                 </h1>
                 <p class="mt-6 max-w-xl text-lg leading-8 text-vipta-muted">
                     {{ $hero['intro'] ?? '' }}
                 </p>
-                <div class="mt-9 flex flex-col gap-3 sm:flex-row">
-                    <x-site.button :route="$primaryCta['route'] ?? 'products'">
-                        {{ $primaryCta['label'] ?? 'Explore Products' }}
-                    </x-site.button>
-                    <x-site.button :route="$secondaryCta['route'] ?? 'contact'" variant="outline">
+                <div class="mt-9 flex">
+                    <x-site.button :route="$secondaryCta['route'] ?? 'contact'" variant="outline" class="w-[80%]">
                         {{ $secondaryCta['label'] ?? 'Order / Enquire' }}
                     </x-site.button>
                 </div>
+
             </div>
 
             <div class="relative">
-                <figure class="relative mx-auto flex w-[calc(100vw_-_1.5rem)] max-w-[34rem] flex-col items-center sm:w-full sm:max-w-md min-[900px]:max-w-xl">
+                <figure class="relative mx-auto flex max-w-xl flex-col items-center">
                     @if (filled($hero['image_badge'] ?? null))
-                        <figcaption class="relative z-10 max-w-md rounded-full border border-vipta-border/80 bg-vipta-paper/90 px-5 py-3 text-center text-sm font-bold uppercase tracking-[0.12em] text-vipta-green shadow-sm backdrop-blur">
+                        <figcaption
+                            class="relative z-10 max-w-md rounded-full border border-vipta-border/80 bg-vipta-paper/90 px-5 py-3 text-center text-sm font-bold uppercase tracking-[0.12em] text-vipta-green shadow-sm backdrop-blur">
                             {{ $hero['image_badge'] }}
                         </figcaption>
                     @endif
-                    <div class="aspect-square w-full overflow-visible rounded-full border border-transparent bg-transparent p-0 shadow-[var(--shadow-vipta-soft)]">
-                        <img
-                            src="{{ asset($hero['image'] ?? 'images/vipta/hero-section.jpeg') }}"
-                            alt="{{ $hero['image_alt'] ?? '' }}"
-                            width="1254"
-                            height="1254"
-                            fetchpriority="high"
+                    <div
+                        class="-mt-3 flex h-[23rem] w-full items-center justify-center overflow-hidden sm:h-[29rem] sm:overflow-visible min-[900px]:h-[30rem]">
+                        <img src="{{ asset($hero['image'] ?? 'images/vipta/single-cookie.png') }}"
+                            alt="{{ $hero['image_alt'] ?? '' }}" width="1400" height="1050" fetchpriority="high"
                             decoding="async"
-                            class="block h-full w-full max-w-full object-contain object-center"
-                        >
+                            class="h-[26rem] w-auto max-w-[calc(100vw-2.5rem)] object-contain drop-shadow-[0_28px_42px_rgba(20,82,37,0.16)] sm:h-[38rem] sm:max-w-none min-[900px]:h-[40rem]">
                     </div>
                 </figure>
 
                 @if (filled($hero['comparison'] ?? null))
-                    <div class="-mt-3 rounded-2xl border border-vipta-border bg-vipta-green px-5 py-4 text-center shadow-[var(--shadow-vipta-soft)] sm:-mt-5">
-                        <p class="text-xs font-bold uppercase tracking-[0.14em] text-vipta-gold">Breakfast comparison</p>
+                    <div
+                        class="-mt-3 rounded-2xl border border-vipta-border bg-vipta-green px-5 py-4 text-center shadow-[var(--shadow-vipta-soft)] sm:-mt-5">
+                        <p class="text-xs font-bold uppercase tracking-[0.14em] text-vipta-gold">Health Comparison</p>
                         <p class="mt-2 font-display text-2xl font-semibold leading-tight text-white sm:text-3xl">
                             {{ $hero['comparison'] }}
                         </p>
@@ -78,21 +76,15 @@
                 @endif
             </div>
         </div>
-
-        <div class="mx-auto max-w-7xl px-5 pb-16 sm:px-8 lg:px-12 lg:pb-24">
-            <div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-                @foreach ($benefits as $benefit)
-                    <x-site.text-card :title="$benefit['title'] ?? ''" :body="$benefit['description'] ?? ''" heading-size="small" hover class="px-5 py-4" />
-                @endforeach
-            </div>
-        </div>
     </section>
 
-    <section class="border-y border-vipta-border bg-vipta-sage py-16 lg:py-24">
+    <section class="bg-vipta-cream py-16 lg:py-24">
         <div class="mx-auto grid max-w-7xl items-center gap-12 px-5 sm:px-8 min-[900px]:grid-cols-[0.92fr_1fr] lg:px-12">
             <div class="rounded-2xl border border-vipta-border bg-vipta-paper p-6 shadow-[var(--shadow-vipta-soft)]">
                 <div class="rounded-xl bg-vipta-cream p-6">
-                    <p class="text-xs font-bold uppercase tracking-[0.18em] text-vipta-earth">{{ $productIntro['eyebrow'] ?? '' }}</p>
+                    <p class="text-xs font-bold uppercase tracking-[0.18em] text-vipta-earth">
+                        {{ $productIntro['eyebrow'] ?? '' }}
+                    </p>
                     <p class="mt-8 font-display text-4xl font-semibold leading-tight text-vipta-green">
                         {{ $productIntro['heading'] ?? '' }}
                     </p>
@@ -105,8 +97,9 @@
             </div>
 
             <div>
-                <x-site.section-heading eyebrow="Product introduction" :heading="$productIntro['heading'] ?? ''" :body="$productIntro['body'] ?? ''" />
-                <x-site.button route="products" variant="outline-sage" class="mt-8">
+                <x-site.section-heading eyebrow="Product introduction" :heading="$productIntro['heading'] ?? ''"
+                    :body="$productIntro['body'] ?? ''" />
+                <x-site.button route="benefits" variant="outline-sage" class="mt-8">
                     Explore Miracle Cookie
                 </x-site.button>
             </div>
@@ -115,26 +108,32 @@
 
     <section class="bg-vipta-cream py-16 lg:py-24">
         <div class="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
-            <x-site.section-heading :eyebrow="$ingredientsPreview['eyebrow'] ?? ''" :heading="$ingredientsPreview['heading'] ?? ''" :body="$ingredientsPreview['body'] ?? ''" align="center" />
+            <div class="grid gap-12 min-[900px]:grid-cols-[0.85fr_1fr] min-[1200px]:gap-20">
 
-            <div class="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
-                @foreach ($ingredients as $ingredient)
-                    <x-site.ingredient-card :ingredient="$ingredient" />
-                @endforeach
-            </div>
-        </div>
-    </section>
-
-    <section class="bg-vipta-paper py-16 lg:py-24">
-        <div class="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
-            <div class="grid gap-10 min-[900px]:grid-cols-[0.85fr_1fr]">
+                {{-- Section heading --}}
                 <x-site.section-heading :eyebrow="$whyChoose['eyebrow'] ?? ''" :heading="$whyChoose['heading'] ?? ''" />
 
-                <div class="grid gap-4 sm:grid-cols-2">
-                    @foreach (($whyChoose['items'] ?? []) as $item)
-                        <x-site.text-card :title="$item['title'] ?? ''" :body="$item['description'] ?? ''" variant="white" />
+                {{-- Benefits --}}
+                <div class="grid gap-x-12 gap-y-10 sm:grid-cols-2">
+                    @foreach (($whyChoose['items'] ?? []) as $index => $item)
+                        <div class="border-t border-vipta-border/70 pt-5">
+                            <div class="mb-4 flex items-start justify-between">
+                                <span class="text-xs font-bold tracking-[0.18em] text-vipta-green/60">
+                                    {{ str_pad($index + 1, 2, '0', STR_PAD_LEFT) }}
+                                </span>
+                            </div>
+
+                            <h3 class="text-xl font-semibold text-vipta-green">
+                                {{ $item['title'] ?? '' }}
+                            </h3>
+
+                            <p class="mt-3 max-w-md text-sm leading-7 text-vipta-ink/70">
+                                {{ $item['description'] ?? '' }}
+                            </p>
+                        </div>
                     @endforeach
                 </div>
+
             </div>
         </div>
     </section>
@@ -142,55 +141,46 @@
     <section class="bg-vipta-cream py-16 lg:py-24">
         <div class="mx-auto grid max-w-7xl items-center gap-12 px-5 sm:px-8 min-[900px]:grid-cols-[0.85fr_1fr] lg:px-12">
             <div>
-                <x-site.section-heading :eyebrow="$storyPreview['eyebrow'] ?? ''" :heading="$storyPreview['heading'] ?? ''" :body="$storyPreview['body'] ?? ''" />
+                <x-site.section-heading :eyebrow="$storyPreview['eyebrow'] ?? ''" :heading="$storyPreview['heading'] ?? ''"
+                    :body="$storyPreview['body'] ?? ''" />
                 <x-site.button :route="$storyPreview['cta_route'] ?? 'our-story'" variant="outline" class="mt-8">
                     {{ $storyPreview['cta_label'] ?? 'Read Our Story' }}
                 </x-site.button>
             </div>
             <div class="overflow-hidden rounded-2xl border border-vipta-border shadow-[var(--shadow-vipta-soft)]">
-                <img
-                    src="{{ asset($storyPreview['image'] ?? 'images/vipta/sunflower-seed.jpg') }}"
-                    alt="{{ $storyPreview['image_alt'] ?? '' }}"
-                    width="1400"
-                    height="1120"
-                    loading="lazy"
-                    decoding="async"
-                    class="aspect-[5/4] w-full object-cover"
-                >
+                <img src="{{ asset($storyPreview['image'] ?? 'images/vipta/Matohwe.jpeg') }}"
+                    alt="{{ $storyPreview['image_alt'] ?? '' }}" width="1400" height="1120" loading="lazy" decoding="async"
+                    class="aspect-[5/4] w-full object-cover">
             </div>
         </div>
     </section>
 
-    <section class="bg-vipta-green py-16 text-white lg:py-24">
-        <div class="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
-            <x-site.section-heading :eyebrow="$impactPreview['eyebrow'] ?? ''" :heading="$impactPreview['heading'] ?? ''" :body="$impactPreview['body'] ?? ''" theme="dark" class="max-w-3xl" />
+    <!--section class="bg-vipta-green py-16 text-white lg:py-24">
+                <div class="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
+                    <x-site.section-heading :eyebrow="$impactPreview['eyebrow'] ?? ''" :heading="$impactPreview['heading'] ?? ''"
+                        :body="$impactPreview['body'] ?? ''" theme="dark" class="max-w-3xl" />
 
-            <div class="mt-12 grid gap-5 md:grid-cols-3">
-                @foreach (($impactPreview['items'] ?? []) as $item)
-                    <x-site.text-card :title="$item['title'] ?? ''" :body="$item['description'] ?? ''" variant="dark" />
-                @endforeach
+                    <div class="mt-12 grid gap-5 md:grid-cols-3">
+                        @foreach (($impactPreview['items'] ?? []) as $item)
+                            <x-site.text-card :title="$item['title'] ?? ''" :body="$item['description'] ?? ''" variant="dark" />
+                        @endforeach
+                    </div>
+                </div>
+            </section-->
+
+    <!--section class="bg-vipta-sage py-16 lg:py-24">
+            <div class="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
+                <x-site.section-heading :eyebrow="$testimonialIntro['eyebrow'] ?? ''" :heading="$testimonialIntro['heading'] ?? ''" align="center" />
+
+                <div class="mt-12 grid gap-5 lg:grid-cols-3">
+                    @foreach ($testimonials as $testimonial)
+                        <x-site.testimonial-card :testimonial="$testimonial" />
+                    @endforeach
+                </div>
             </div>
-        </div>
-    </section>
+        </section-->
 
-    <section class="bg-vipta-sage py-16 lg:py-24">
-        <div class="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
-            <x-site.section-heading :eyebrow="$testimonialIntro['eyebrow'] ?? ''" :heading="$testimonialIntro['heading'] ?? ''" align="center" />
-
-            <div class="mt-12 grid gap-5 lg:grid-cols-3">
-                @foreach ($testimonials as $testimonial)
-                    <x-site.testimonial-card :testimonial="$testimonial" />
-                @endforeach
-            </div>
-        </div>
-    </section>
-
-    <x-site.cta-section
-        :heading="$finalCta['heading'] ?? ''"
-        :body="$finalCta['body'] ?? ''"
-        :primary-label="$finalCta['cta_label'] ?? 'Contact Us'"
-        :primary-route="$finalCta['cta_route'] ?? 'contact'"
-        variant="panel"
-        class="bg-vipta-cream"
-    />
+    <x-site.cta-section :heading="$finalCta['heading'] ?? ''" :body="$finalCta['body'] ?? ''"
+        :primary-label="$finalCta['cta_label'] ?? 'Contact Us'" :primary-route="$finalCta['cta_route'] ?? 'contact'"
+        variant="panel" class="bg-vipta-cream" />
 @endsection
