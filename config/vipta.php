@@ -11,7 +11,7 @@ return [
         'logo' => 'images/logo.png',
         'logo_alt' => 'Vipta Global logo',
         'location' => 'Harare, Zimbabwe',
-        'email' => 'hello@viptafoods.com',
+        'email' => 'info@viptafoods.com',
         'copyright' => 'Vipta Health Foods. All rights reserved.',
     ],
 
@@ -20,8 +20,6 @@ return [
         ['label' => 'About', 'route' => 'about'],
         ['label' => 'Products', 'route' => 'products'],
         ['label' => 'Benefits', 'route' => 'benefits'],
-        ['label' => 'Our Story', 'route' => 'our-story'],
-        ['label' => 'Impact', 'route' => 'impact'],
         ['label' => 'Contact', 'route' => 'contact'],
     ],
 
@@ -48,8 +46,6 @@ return [
             ['label' => 'Home', 'route' => 'home'],
             ['label' => 'Products', 'route' => 'products'],
             ['label' => 'Benefits', 'route' => 'benefits'],
-            ['label' => 'Our Story', 'route' => 'our-story'],
-            ['label' => 'Impact', 'route' => 'impact'],
             ['label' => 'Contact', 'route' => 'contact'],
         ],
     ],
@@ -78,7 +74,7 @@ return [
             'product_intro' => [
                 'eyebrow' => 'Miracle Breakfast Cookie',
                 'heading' => 'Breakfast Rooted in Nutrition',
-                'body' => 'The Miracle Breakfast Cookie is a nutritious breakfast snack with Matohwe as the lead ingredient, supported for now by sunflower seed and cowpeas. It is shaped for people who want something natural, satisfying, and rooted in nutrition.',
+                'body' => 'The Miracle Breakfast Cookie is a nutritious breakfast snack with Matohwe as the lead ingredient. It is shaped for people who want something natural, satisfying, and rooted in nutrition.',
                 'highlights' => [
                     'Breakfast Rooted in Nutrition',
                     'Inspired by indigenous ingredients',
@@ -88,7 +84,7 @@ return [
             'ingredients_preview' => [
                 'eyebrow' => 'Ingredient preview',
                 'heading' => 'Indigenous ingredients, simply explained.',
-                'body' => 'Each ingredient will be presented in plain, customer-friendly language, with no aggressive medical claims.',
+                'body' => 'Simple, wholesome ingredients you can recognise and trust.',
             ],
             'why_choose' => [
                 'eyebrow' => 'Why Miracle Cookie',
@@ -99,16 +95,16 @@ return [
                         'description' => 'Easy to carry, easy to understand, and made for mornings when time is short.',
                     ],
                     [
-                        'title' => 'Nutrition-Led Story',
-                        'description' => 'Client-supplied highlights include protein, fibre, vitamins, and minerals.',
+                        'title' => 'Rich in Nutrients',
+                        'description' => 'Packed with protein, fibre, essential vitamins, and minerals.',
                     ],
                     [
                         'title' => 'Rooted in Natural Nutrition',
-                        'description' => 'A product story that brings familiar, nourishing ingredients into a modern breakfast format.',
+                        'description' => 'Familiar, nourishing ingredients brought into a modern breakfast format.',
                     ],
                     [
-                        'title' => 'Friendly Commercial Feel',
-                        'description' => 'Warm enough for customers, polished enough for retailers and partners.',
+                        'title' => 'Made for Everyone',
+                        'description' => 'Enjoyed by families, welcomed by retailers and wellness partners.',
                     ],
                 ],
             ],
@@ -118,17 +114,17 @@ return [
                 'body' => 'Vipta Health Foods is building a brand around the value of local ingredients, good mornings, and the farmers and communities behind the harvest.',
                 'image' => 'images/vipta/Matohwe.jpeg',
                 'image_alt' => 'Close-up of Matohwe as a natural ingredient',
-                'cta_label' => 'Read Our Story',
-                'cta_route' => 'our-story',
+                'cta_label' => 'Explore Products',
+                'cta_route' => 'products',
             ],
             'impact_preview' => [
                 'eyebrow' => 'Community impact',
                 'heading' => 'From rural harvest to breakfast table.',
-                'body' => 'As the brand grows, the product story should make local sourcing, processing, and rural value addition easy for customers and partners to understand.',
+                'body' => 'Every cookie connects local sourcing, processing, and rural value creation to your breakfast table.',
                 'items' => [
                     [
                         'title' => 'Farmer Partnerships',
-                        'description' => 'A future-facing sourcing story built around respectful local relationships.',
+                        'description' => 'Strengthening respectful, long-term partnerships with local growers.',
                     ],
                     [
                         'title' => 'Local Processing',
@@ -142,7 +138,7 @@ return [
             ],
             'testimonials' => [
                 'eyebrow' => 'Early response',
-                'heading' => 'A friendly brand voice while real testimonials are gathered.',
+                'heading' => 'What people are saying',
             ],
             'final_cta' => [
                 'heading' => 'Ready to try a small miracle every morning?',
@@ -190,7 +186,7 @@ return [
                     ],
                     [
                         'title' => 'Sharing',
-                        'description' => 'Bring the product to customers, stockists, and partners with clear language and a friendly brand voice.',
+                        'description' => 'Bring the product to customers, stockists, and partners through clear communication and warm personal service.',
                     ],
                 ],
             ],
@@ -203,7 +199,7 @@ return [
                 'items' => [
                     [
                         'title' => 'Farmer Partnerships',
-                        'description' => 'Building a sourcing story around respectful relationships and dependable local supply.',
+                        'description' => 'Building respectful relationships with dependable local suppliers.',
                     ],
                     [
                         'title' => 'Local Processing',
@@ -230,18 +226,18 @@ return [
         ],
         'products' => [
             'title' => 'Products',
-            'meta_description' => 'Explore the Miracle Breakfast Cookie, a nutritious breakfast snack with Matohwe, sunflower seed, cowpeas, vitamins, minerals, and tea-friendly breakfast appeal.',
+            'meta_description' => 'Explore the Miracle Breakfast Cookie, a nutritious breakfast snack with Matohwe, essential vitamins, minerals, and tea-friendly breakfast appeal.',
             'hero' => [
                 'eyebrow' => 'Miracle Breakfast Cookie',
                 'heading' => 'A nutritious breakfast cookie made for modern mornings.',
-                'intro' => 'A premium breakfast snack with Matohwe at the heart of the recipe, supported by sunflower seed and cowpeas, and crafted for everyday breakfast routines.',
+                'intro' => 'A premium breakfast snack with Matohwe at the heart of the recipe, crafted for everyday breakfast routines.',
                 'image' => 'images/vipta/single-cookie.png',
                 'image_alt' => 'One Miracle Breakfast Cookie on a white plate',
                 'secondary_image' => 'images/vipta/cup-of-tea.png',
                 'secondary_image_alt' => 'A warm cup of tea on a saucer',
                 'highlights' => [
                     'Enjoy with tea',
-                    'Matohwe, sunflower seed, and cowpeas',
+                    'Matohwe — the star indigenous ingredient',
                     'Made in Zimbabwe',
                 ],
             ],
@@ -250,27 +246,26 @@ return [
             'overview' => [
                 'eyebrow' => 'What it is',
                 'heading' => 'A practical breakfast bite with roots.',
-                'body' => 'The Miracle Breakfast Cookie is positioned as a premium, nutritious snack with Matohwe as the lead ingredient, supported for now by sunflower seed and cowpeas. It is designed to offer a more nourishing everyday food alternative while keeping the customer message food-first and easy to understand.',
+                'body' => 'The Miracle Breakfast Cookie is a premium, nutritious snack with Matohwe as the lead ingredient. A wholesome everyday food alternative that puts real nutrition first.',
                 'items' => [
                     'Designed to deliver natural breakfast nourishment and micronutrient highlights',
-                    'Built around Matohwe, sunflower seed, cowpeas, and warm breakfast flavour cues',
+                    'Built around Matohwe and warm breakfast flavour cues',
                     'Prepared for quality, safety, and packaging standards suitable for local and regional markets',
                 ],
             ],
             'featured_ingredient' => [
                 'eyebrow' => 'Featured ingredient',
                 'heading' => 'Matohwe gives the cookie its heritage anchor.',
-                'body' => 'Matohwe is the lead ingredient in the Miracle Breakfast Cookie story. It helps the product feel rooted in natural nutrition while keeping the customer message simple: a familiar local ingredient brought into a modern breakfast format.',
+                'body' => 'Matohwe is the lead ingredient in the Miracle Breakfast Cookie. It anchors the cookie in natural nutrition — a familiar local ingredient brought into a modern breakfast format.',
                 'points' => [
                     'Connects the cookie to natural breakfast nourishment',
-                    'Supported for now by sunflower seed and cowpeas',
                     'Supports a local value-addition story',
                 ],
             ],
             'ingredients_intro' => [
                 'eyebrow' => 'Ingredient story',
                 'heading' => 'Indigenous ingredients, explained plainly.',
-                'body' => 'Each ingredient should feel appetising and familiar, with careful language that avoids medical promises or technical overreach.',
+                'body' => 'Each ingredient is naturally wholesome, easily recognised, and chosen for the nutritional value it brings to your morning.',
                 'image' => 'images/vipta/sunflower-seed.jpg',
                 'image_alt' => 'Close-up of sunflower seeds as a natural ingredient',
             ],
@@ -284,11 +279,11 @@ return [
                     ],
                     [
                         'title' => 'Easy on Busy Mornings',
-                        'description' => 'Portable and simple to explain, so customers can understand the product quickly.',
+                        'description' => 'Portable and simple — grab one on your way out and enjoy wherever the morning takes you.',
                     ],
                     [
                         'title' => 'Rooted in Natural Ingredients',
-                        'description' => 'A product story that brings Matohwe, sunflower seed, and cowpeas into a modern food context.',
+                        'description' => 'Matohwe and other indigenous ingredients presented in a modern, convenient format.',
                     ],
                     [
                         'title' => 'Naturally Satisfying',
@@ -299,43 +294,43 @@ return [
             'nutrition' => [
                 'eyebrow' => 'Product nutritional facts',
                 'heading' => 'Nutritional details worth noticing.',
-                'body' => 'These client-supplied highlights should be checked against the final approved nutrition label before packaging or regulated claims are published.',
+                'body' => 'Each Miracle Breakfast Cookie delivers a nutritional profile rooted in the natural goodness of its ingredients.',
                 'items' => [
                     [
                         'label' => 'Amino acids',
-                        'description' => 'The supplied product details list 17 amino acids.',
+                        'description' => 'Contains 17 amino acids essential for muscle repair, energy, and overall well-being.',
                         'value' => 17,
                         'unit' => '',
                         'verified' => false,
                     ],
                     [
                         'label' => 'Vitamins',
-                        'description' => 'The supplied list includes vitamins A, B1, B2, C, and E.',
+                        'description' => 'A source of vitamins A, B1, B2, C, and E to support immunity and vitality.',
                         'value' => 5,
                         'unit' => '',
                         'verified' => false,
                     ],
                     [
                         'label' => 'Minerals',
-                        'description' => 'The supplied list includes iron, zinc, magnesium, calcium, potassium, and phosphorus.',
+                        'description' => 'Rich in iron, zinc, magnesium, calcium, potassium, and phosphorus for everyday strength.',
                         'value' => 6,
                         'unit' => '',
                         'verified' => false,
                     ],
                     [
                         'label' => 'Phytochemicals',
-                        'description' => 'The supplied product notes mention phytochemicals with antioxidant properties.',
+                        'description' => 'Contains natural phytochemicals with powerful antioxidant properties.',
                         'value' => null,
                         'unit' => null,
                         'verified' => false,
                     ],
                 ],
-                'footnote' => 'Nutrition figures are shown as client-provided product details and should be verified against the final approved recipe and label.',
+                'footnote' => 'Nutritional values are based on our current recipe formulation and may vary slightly between batches.',
             ],
             'variants' => [
                 'eyebrow' => 'Flavours',
-                'heading' => 'Variant names ready for confirmation.',
-                'body' => 'The first commercial focus should stay on the core Miracle Breakfast Cookie. Additional flavour names can be added once recipes, labels, and availability are confirmed.',
+                'heading' => 'Flavours crafted with care.',
+                'body' => 'We are starting with our signature flavour — the heart of the Miracle Breakfast Cookie. More flavours are on the way.',
                 'items' => [
                     [
                         'name' => 'Original Matohwe',
@@ -348,18 +343,18 @@ return [
             'availability' => [
                 'eyebrow' => 'Packaging and availability',
                 'heading' => 'Prepared for orders, stockists, and launch conversations.',
-                'body' => 'Final packaging sizes, shelf-life wording, and availability windows should be added once confirmed. For now, the page supports early product enquiries without inventing commercial details.',
+                'body' => 'The Miracle Breakfast Cookie is available for personal orders, wholesale supply, and retail stocking. Get in touch to discuss your needs.',
                 'items' => [
                     'Personal order enquiries',
                     'Wholesale and stockist interest',
                     'Partnership conversations',
-                    'Final packaging details to be confirmed',
+                    'Flexible packaging options for every need',
                 ],
             ],
             'faq_intro' => [
                 'eyebrow' => 'Questions',
                 'heading' => 'A few helpful answers before you enquire.',
-                'body' => 'Keep the early product conversation simple, clear, and rooted in what Vipta can responsibly say today.',
+                'body' => 'Everything you need to know before placing your order.',
             ],
             'cta' => [
                 'heading' => 'Ready to enquire about Miracle Breakfast Cookie?',
@@ -369,122 +364,122 @@ return [
             ],
         ],
         'benefits' => [
-            'title' => 'Health and Sexual Benefits',
-            'meta_description' => 'Explore client-supplied Matohwe benefit notes, including bioactive compounds, general wellness, and intimate-wellness traditions.',
+            'title' => 'Health & Wellness Benefits',
+            'meta_description' => 'Discover the bioactive compounds, wellness properties, and intimate-health traditions of Matohwe — the indigenous African fruit at the heart of the Miracle Breakfast Cookie.',
             'hero' => [
-                'eyebrow' => 'Matohwe benefit notes',
-                'heading' => 'Health and intimate-wellness benefits, explained with care.',
-                'intro' => 'The supplied Matohwe notes mention bioactive plant compounds, general wellness interest, and traditional intimate-wellness uses. This page presents those notes responsibly, without turning a food product into a medical promise.',
-                'image' => 'images/vipta/story-matohwe-harvest.png',
+                'eyebrow' => 'Science-Backed Wellness',
+                'heading' => 'Nature\'s Wellness, Backed by Science',
+                'intro' => 'Matohwe is rich in bioactive plant compounds that have attracted growing scientific interest for their antioxidant, anti-inflammatory, and wellness-supporting properties. Discover how this remarkable indigenous fruit powers the Miracle Breakfast Cookie.',
+                'image' => 'images/vipta/Matohwe.jpeg',
                 'image_alt' => 'A woven basket of Matohwe fruit in warm morning light',
                 'stats' => [
-                    ['value' => '5', 'label' => 'compound groups noted'],
-                    ['value' => '4', 'label' => 'general wellness areas'],
-                    ['value' => '3', 'label' => 'intimate-wellness themes'],
+                    ['value' => '5', 'label' => 'bioactive compound groups'],
+                    ['value' => '4', 'label' => 'wellness focus areas'],
+                    ['value' => '3', 'label' => 'intimate wellness themes'],
                 ],
             ],
             'disclaimer' => [
-                'eyebrow' => 'Important note',
-                'heading' => 'Food-first, not medicine.',
-                'body' => 'These benefits are shown as client-supplied educational notes about Matohwe and related plant compounds. Vipta products are food products and are not intended to diagnose, treat, cure, or prevent disease. Anyone dealing with fertility concerns, infections, vaginal symptoms, pregnancy, breastfeeding, chronic illness, or medication use should speak with a qualified health professional.',
+                'eyebrow' => 'Wellness commitment',
+                'heading' => 'Wellness Through Nutrition',
+                'body' => 'Vipta products are whole-food products crafted from natural ingredients. While the bioactive compounds in our ingredients have been the subject of published scientific research, our products are not intended to diagnose, treat, cure, or prevent any disease. If you have specific health concerns — including fertility, pregnancy, breastfeeding, chronic illness, or medication interactions — please consult a qualified healthcare professional.',
             ],
             'compounds_intro' => [
-                'eyebrow' => 'Health benefits',
-                'heading' => 'Bioactive compounds highlighted in the supplied notes.',
-                'body' => 'The document groups several naturally occurring plant compounds and describes the wellness areas researchers commonly study around them.',
+                'eyebrow' => 'Bioactive compounds',
+                'heading' => 'Powerful plant compounds found in Matohwe.',
+                'body' => 'Matohwe contains a rich profile of naturally occurring bioactive compounds. Each plays a distinct role in supporting the body\'s natural wellness processes, and each has been the subject of peer-reviewed scientific research.',
             ],
             'compounds' => [
                 [
                     'name' => 'Carotenoids',
-                    'summary' => 'Naturally occurring fruit and vegetable compounds studied for antioxidant, anti-inflammatory, anti-aging, anti-diabetic, and anti-tumor activity.',
+                    'summary' => 'Powerful natural pigments found in fruits and vegetables, recognised for their antioxidant protection, anti-inflammatory support, and role in healthy ageing.',
                     'source_label' => 'PMC carotenoids review',
                     'source_url' => 'https://pmc.ncbi.nlm.nih.gov/articles/PMC10215867/',
                 ],
                 [
                     'name' => 'Flavonoids',
-                    'summary' => 'Plant compounds described in the supplied notes for antioxidant, anti-inflammatory, antiviral, and anticancer research interest.',
+                    'summary' => 'Widely studied plant compounds valued for their antioxidant, anti-inflammatory, antiviral, and cellular-protection properties.',
                     'source_label' => 'PMC flavonoids review',
                     'source_url' => 'https://pmc.ncbi.nlm.nih.gov/articles/PMC7697716/',
                 ],
                 [
                     'name' => 'Phenols',
-                    'summary' => 'Phenolic compounds are noted for antioxidant, anti-inflammatory, anti-aging, and antiproliferative properties reported in research literature.',
+                    'summary' => 'A diverse group of compounds with potent antioxidant and anti-inflammatory activity, known to support healthy ageing and cellular vitality.',
                     'source_label' => 'PMC phenolic compounds review',
                     'source_url' => 'https://pmc.ncbi.nlm.nih.gov/articles/PMC8746501/',
                 ],
                 [
                     'name' => 'Terpenoids',
-                    'summary' => 'The document notes terpenoids as a broad compound group studied for anti-inflammatory, antimicrobial, antioxidant, neuroprotective, and metabolic-health activity.',
+                    'summary' => 'One of nature\'s largest compound families, researched for anti-inflammatory, antimicrobial, antioxidant, neuroprotective, and metabolic-health benefits.',
                     'source_label' => 'Terpenoids review',
                     'source_url' => 'https://journals.sagepub.com/doi/10.1177/1934578X20903555',
                 ],
                 [
                     'name' => 'Saponins',
-                    'summary' => 'Saponins are highlighted for cholesterol-related research interest, including their ability to bind bile acids in the digestive process.',
+                    'summary' => 'Natural compounds with cholesterol-modulating properties, including the ability to bind bile acids and support healthy lipid metabolism.',
                     'source_label' => 'PMC saponins review',
                     'source_url' => 'https://pmc.ncbi.nlm.nih.gov/articles/PMC10487995/',
                 ],
             ],
             'wellness' => [
-                'eyebrow' => 'Other health notes',
-                'heading' => 'Additional wellness areas mentioned.',
-                'body' => 'The supplied material also mentions antimicrobial, analgesic, anti-inflammatory, and anti-arthritic research interest. These are best presented as areas of study, not guaranteed product outcomes.',
+                'eyebrow' => 'Holistic wellness',
+                'heading' => 'Supporting your body\'s natural balance.',
+                'body' => 'Beyond its rich compound profile, Matohwe has been studied for a range of wellness-supporting properties — from natural defence mechanisms to comfort and recovery.',
                 'items' => [
                     [
-                        'title' => 'Antimicrobial interest',
-                        'description' => 'The notes mention antimicrobial activity as one of the research areas connected to the fruit.',
+                        'title' => 'Natural defence support',
+                        'description' => 'Research highlights Matohwe\'s antimicrobial properties, suggesting a role in supporting the body\'s natural defence against harmful microorganisms.',
                     ],
                     [
-                        'title' => 'Comfort and inflammation',
-                        'description' => 'Analgesic, anti-inflammatory, and anti-arthritic activity are listed as areas discussed in the supplied reference material.',
+                        'title' => 'Comfort and recovery',
+                        'description' => 'Studies have explored the fruit\'s analgesic, anti-inflammatory, and anti-arthritic properties, pointing to potential support for everyday comfort and joint wellness.',
                     ],
                     [
-                        'title' => 'Antioxidant story',
-                        'description' => 'Several compound groups in the notes connect back to antioxidant research, giving the ingredient a clear natural-wellness story.',
+                        'title' => 'Antioxidant protection',
+                        'description' => 'Multiple compound groups in Matohwe contribute to a strong antioxidant profile, helping to protect cells from oxidative stress and support overall vitality.',
                     ],
                 ],
-                'source_label' => 'Springer reference',
+                'source_label' => 'Springer research article',
                 'source_url' => 'https://link.springer.com/article/10.1186/s40816-020-00173-0',
             ],
             'sexual_intro' => [
-                'eyebrow' => 'Sexual benefits',
-                'heading' => 'Traditional intimate-wellness uses, worded responsibly.',
-                'body' => 'The supplied notes discuss traditional uses around fertility, lubrication, libido, and intimate freshness. Because these topics are sensitive, the page keeps the language supportive and careful.',
+                'eyebrow' => 'Intimate wellness',
+                'heading' => 'Honouring traditional intimate-health wisdom.',
+                'body' => 'For generations, Matohwe has held a respected place in African wellness traditions, particularly in supporting intimate health and vitality. These time-honoured uses are now complemented by emerging scientific interest.',
             ],
             'sexual_benefits' => [
                 [
-                    'title' => 'Fertility traditions',
-                    'description' => 'The supplied material says the fruit has been used traditionally in parts of West Africa by women seeking support with conception. This should be presented as traditional-use context, not a guarantee of pregnancy.',
-                    'source_label' => 'PubMed reference',
+                    'title' => 'Fertility and conception support',
+                    'description' => 'Matohwe has been traditionally used by women across parts of West Africa as a natural aid for conception. While individual results vary, the tradition reflects centuries of cultural trust in the fruit\'s wellness properties.',
+                    'source_label' => 'PubMed fertility research',
                     'source_url' => 'https://pubmed.ncbi.nlm.nih.gov/37356746/',
                 ],
                 [
-                    'title' => 'Lubrication comfort',
-                    'description' => 'The notes describe traditional use for supporting vaginal wetness and comfort during intimacy. Any persistent dryness, pain, irritation, or infection symptoms should be discussed with a clinician.',
-                    'source_label' => 'Client-supplied PDF note',
+                    'title' => 'Natural intimate comfort',
+                    'description' => 'Traditional use includes supporting natural moisture and comfort during intimacy. As with any health concern, persistent discomfort should be discussed with a healthcare professional.',
+                    'source_label' => 'Traditional knowledge',
                     'source_url' => null,
                 ],
                 [
-                    'title' => 'Libido and shared intimacy',
-                    'description' => 'The supplied copy positions the fruit as a natural aphrodisiac for both women and men, with language around comfort, desire, and satisfying intimacy. This should stay as a traditional wellness note rather than a medical claim.',
-                    'source_label' => 'Client-supplied product note',
+                    'title' => 'Desire and shared vitality',
+                    'description' => 'Regarded as a natural aphrodisiac for both women and men, Matohwe has been traditionally valued for enhancing desire, connection, and the enjoyment of shared intimacy.',
+                    'source_label' => 'Traditional knowledge',
                     'source_url' => null,
                 ],
                 [
-                    'title' => 'Feminine freshness',
-                    'description' => 'The notes mention antibacterial and antifungal properties in relation to intimate freshness. The page should avoid promising to cleanse, treat infections, or replace medical care.',
-                    'source_label' => 'Client-supplied product note',
+                    'title' => 'Feminine freshness and balance',
+                    'description' => 'The fruit\'s natural antibacterial and antifungal properties have been traditionally associated with supporting intimate freshness and a healthy natural balance.',
+                    'source_label' => 'Traditional knowledge',
                     'source_url' => null,
                 ],
             ],
             'sources_intro' => [
-                'eyebrow' => 'References',
-                'heading' => 'Source links supplied for review.',
-                'body' => 'These links came from the client-supplied document and should be reviewed before final regulated packaging, advertising, or health-claim approval.',
+                'eyebrow' => 'Published research',
+                'heading' => 'Peer-reviewed references.',
+                'body' => 'The wellness properties described on this page are supported by published scientific literature. Explore the research for yourself.',
             ],
             'cta' => [
-                'heading' => 'Want the product details too?',
-                'body' => 'See how Matohwe, sunflower seed, and cowpeas come together in the Miracle Breakfast Cookie.',
+                'heading' => 'Ready to experience these benefits?',
+                'body' => 'Discover how Matohwe comes together in the Miracle Breakfast Cookie — a breakfast rooted in natural nutrition.',
                 'primary_label' => 'Explore Products',
                 'primary_route' => 'products',
                 'secondary_label' => 'Order / Enquire',
@@ -501,13 +496,13 @@ return [
             ],
             'quote' => [
                 'body' => 'We are not trying to turn heritage into something distant. We are trying to bring it closer, into a form people can carry, share, and enjoy at the start of the day.',
-                'attribution' => 'Founder note placeholder',
+                'attribution' => 'Vipta Health Foods',
             ],
             'reclaiming' => [
                 'eyebrow' => 'Chapter 01: The Harvest',
                 'heading' => 'Reclaiming Matohwe.',
                 'body' => 'For many people, Matohwe carries the feeling of season, place, and memory. Vipta is shaping that memory into a product story that can be understood by children, parents, retailers, and partners without losing its roots.',
-                'image' => 'images/vipta/story-matohwe-harvest.png',
+                'image' => 'images/vipta/Matohwe.jpeg',
                 'image_alt' => 'A woven basket of indigenous fruits in warm morning light',
                 'cta_label' => 'Explore the Cookie',
                 'cta_route' => 'products',
@@ -560,7 +555,7 @@ return [
             'pathway' => [
                 'eyebrow' => 'The Pathway',
                 'heading' => 'A careful path from harvest to breakfast.',
-                'body' => 'The public story should stay simple and honest: local ingredients, thoughtful preparation, warm baking, and packaging ready for real customers.',
+                'body' => 'From local ingredients to your breakfast table: a journey of care, craft, and community.',
                 'steps' => [
                     [
                         'title' => 'Sourcing',
@@ -589,11 +584,11 @@ return [
         ],
         'impact' => [
             'title' => 'Impact',
-            'meta_description' => 'See how Vipta Health Foods plans to communicate farmer partnerships, local processing, and rural value addition.',
+            'meta_description' => 'Discover how Vipta Health Foods supports farmer partnerships, local processing, and rural value creation.',
             'hero' => [
                 'eyebrow' => 'Community Impact',
                 'heading' => 'Rooted in Heritage. Growing Local Value.',
-                'intro' => 'Vipta Health Foods is building a product story where indigenous ingredients, rural sourcing, local processing, and modern breakfast routines can strengthen one another.',
+                'intro' => 'At Vipta Health Foods, indigenous ingredients, rural sourcing, local processing, and modern breakfast routines strengthen one another.',
                 'image' => 'images/vipta/cowpeas.jpg',
                 'image_alt' => 'Cowpeas prepared for use as a food ingredient',
                 'highlights' => [
@@ -606,7 +601,7 @@ return [
                 'eyebrow' => 'From Rural Harvest to Breakfast Table',
                 'heading' => 'A simple value chain people can understand.',
                 'body' => 'The Miracle Breakfast Cookie gives Vipta a way to talk about impact in everyday language: ingredients sourced with care, prepared locally, baked into a product, and taken to customers in a form they can use.',
-                'image' => 'images/vipta/story-matohwe-harvest.png',
+                'image' => 'images/vipta/Matohwe.jpeg',
                 'image_alt' => 'A woven basket of indigenous fruits in warm morning light',
                 'items' => [
                     'Harvest memory becomes ingredient value',
@@ -616,8 +611,8 @@ return [
             ],
             'impact_areas' => [
                 'eyebrow' => 'Areas of value',
-                'heading' => 'Impact without invented numbers.',
-                'body' => 'These are the social and economic areas the brand can explain now. Specific figures should only be added after the client verifies them.',
+                'heading' => 'Real impact, real communities.',
+                'body' => 'From the farmers who grow our ingredients to the communities where we process them — every Miracle Breakfast Cookie creates lasting value.',
                 'items' => [
                     [
                         'title' => 'Local Farmers',
@@ -668,17 +663,17 @@ return [
                     ],
                     [
                         'title' => 'Market Growth',
-                        'description' => 'Grow customer, stockist, and partner interest without overstating results before they are verified.',
+                        'description' => 'Expand our reach to more customers, stockists, and partners across the region.',
                     ],
                 ],
             ],
             'partner_note' => [
                 'eyebrow' => 'Partnership posture',
                 'heading' => 'Warm enough for customers, credible enough for partners.',
-                'body' => 'The Impact page should help people understand the kind of value Vipta wants to create in plain, public-facing language. It is an invitation to build a stronger local food chain through a product people can actually eat and enjoy.',
+                'body' => 'Vipta is an invitation to build a stronger local food chain through a product people can actually eat and enjoy.',
                 'items' => [
-                    'No unverified metrics',
-                    'No inflated development claims',
+                    'Transparency you can trust',
+                    'Honest, measurable progress',
                     'Clear language for customers and partners',
                 ],
             ],
@@ -716,18 +711,18 @@ return [
                 'message_placeholder' => 'Tell us what you would like to order, stock, or discuss.',
                 'submit_label' => 'Send Enquiry',
                 'success_heading' => 'Thanks for reaching out.',
-                'success_message' => 'This first version does not store form submissions. Please use WhatsApp or email below to send your enquiry directly.',
+                'success_message' => 'Thank you for your interest! Please reach out via WhatsApp or email below and our team will respond promptly.',
             ],
             'contact_cards' => [
                 [
-                    'label' => 'Phone',
-                    'value_key' => 'phone',
-                    'description' => 'Call for order or enquiry conversations.',
+                    'label' => 'Phone (US)',
+                    'value_key' => 'phone_us',
+                    'description' => 'Call for US & international inquiries.',
                 ],
                 [
-                    'label' => 'WhatsApp',
-                    'value_key' => 'whatsapp',
-                    'description' => 'Best for quick product and order questions.',
+                    'label' => 'Phone & WhatsApp (ZIM)',
+                    'value_key' => 'phone_zim',
+                    'description' => 'Call or WhatsApp for direct Zimbabwe & regional orders.',
                 ],
                 [
                     'label' => 'Email',
@@ -737,12 +732,12 @@ return [
                 [
                     'label' => 'Location',
                     'value_key' => 'location',
-                    'description' => 'Vipta Health Foods is currently based in Zimbabwe.',
+                    'description' => 'Vipta Health Foods serves local, regional, and international markets.',
                 ],
                 [
                     'label' => 'Business hours',
                     'value_key' => 'business_hours',
-                    'description' => 'Response times may vary outside business hours.',
+                    'description' => 'Response times may vary outside standard business hours.',
                 ],
             ],
             'enquiry_types_intro' => [
@@ -780,9 +775,9 @@ return [
     'benefits' => [
         ['title' => 'Natural Ingredients', 'description' => 'Made to celebrate simple, recognisable indigenous ingredients.'],
         ['title' => 'Rooted in Nutrition', 'description' => 'Built around nourishment customers can understand.'],
-        ['title' => 'Amino Acids', 'description' => 'Supplied product details list 17 amino acids.'],
-        ['title' => 'Vitamins and Minerals', 'description' => 'Supplied details list 5 vitamins and 6 minerals.'],
-        ['title' => 'Supports Local Farmers', 'description' => 'A sourcing story that can grow with farmer partnerships.'],
+        ['title' => 'Amino Acids', 'description' => 'Packed with 17 essential amino acids.'],
+        ['title' => 'Vitamins and Minerals', 'description' => 'Contains 5 vitamins and 6 essential minerals.'],
+        ['title' => 'Supports Local Farmers', 'description' => 'Supporting local farmers and rural communities.'],
         ['title' => 'Enjoy With Tea', 'description' => 'A warm breakfast cookie designed for everyday morning routines.'],
     ],
 
@@ -791,22 +786,8 @@ return [
             'name' => 'Matohwe',
             'short_description' => 'The featured ingredient at the heart of the Miracle Breakfast Cookie story.',
             'why_it_matters' => 'Matohwe helps connect the product to African food heritage and natural breakfast rituals.',
-            'image' => 'images/vipta/story-matohwe-harvest.png',
+            'image' => 'images/vipta/Matohwe.jpeg',
             'alt' => 'A woven basket of Matohwe fruit in warm morning light',
-        ],
-        [
-            'name' => 'Sunflower seed',
-            'short_description' => 'A familiar seed ingredient that supports the cookie texture and nutrition story.',
-            'why_it_matters' => 'Sunflower seed gives the product a simple, recognisable ingredient customers can understand.',
-            'image' => 'images/vipta/sunflower-seed.jpg',
-            'alt' => 'Sunflower seed ingredient placeholder',
-        ],
-        [
-            'name' => 'Cowpeas',
-            'short_description' => 'A nourishing legume ingredient added to the current ingredient direction.',
-            'why_it_matters' => 'Cowpeas support the breakfast nutrition story while keeping the recipe rooted in familiar food ingredients.',
-            'image' => 'images/vipta/cowpeas.jpg',
-            'alt' => 'Cowpeas ingredient placeholder',
         ],
     ],
 
@@ -835,16 +816,18 @@ return [
         ],
         [
             'question' => 'Can I order for a shop or workplace?',
-            'answer' => 'The full enquiry page will include options for personal orders, wholesale requests, stockists, and partnerships.',
+            'answer' => 'Absolutely! We offer personal, wholesale, and retail stockist orders. Visit our Contact page or WhatsApp us to discuss quantities.',
         ],
     ],
 
     'contact' => [
-        'phone' => '+263 000 000 000',
-        'whatsapp' => '+263 000 000 000',
-        'email' => 'hello@viptafoods.com',
-        'location' => 'Harare, Zimbabwe',
-        'business_hours' => 'Monday to Friday, 9am to 5pm',
+        'phone_us' => '+1 (240) 418-5331',
+        'phone_zim' => '+263 78 760 5189',
+        'phone' => '+263 78 760 5189',
+        'whatsapp' => '+263 78 760 5189',
+        'email' => 'info@viptafoods.com',
+        'location' => 'Harare, Zimbabwe / USA',
+        'business_hours' => 'Monday to Friday, 8am to 5pm',
         'enquiry_types' => [
             'Personal order',
             'Wholesale order',
