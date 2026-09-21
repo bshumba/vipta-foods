@@ -11,7 +11,7 @@ return [
         'logo' => 'images/logo.png',
         'logo_alt' => 'Vipta Global logo',
         'location' => 'Harare, Zimbabwe',
-        'email' => 'hello@viptafoods.com',
+        'email' => 'info@viptafoods.com',
         'copyright' => 'Vipta Health Foods. All rights reserved.',
     ],
 
@@ -715,14 +715,14 @@ return [
             ],
             'contact_cards' => [
                 [
-                    'label' => 'Phone',
-                    'value_key' => 'phone',
-                    'description' => 'Call for order or enquiry conversations.',
+                    'label' => 'Phone (US)',
+                    'value_key' => 'phone_us',
+                    'description' => 'Call for US & international inquiries.',
                 ],
                 [
-                    'label' => 'WhatsApp',
-                    'value_key' => 'whatsapp',
-                    'description' => 'Best for quick product and order questions.',
+                    'label' => 'Phone & WhatsApp (ZIM)',
+                    'value_key' => 'phone_zim',
+                    'description' => 'Call or WhatsApp for direct Zimbabwe & regional orders.',
                 ],
                 [
                     'label' => 'Email',
@@ -732,12 +732,12 @@ return [
                 [
                     'label' => 'Location',
                     'value_key' => 'location',
-                    'description' => 'Vipta Health Foods is currently based in Zimbabwe.',
+                    'description' => 'Vipta Health Foods serves local, regional, and international markets.',
                 ],
                 [
                     'label' => 'Business hours',
                     'value_key' => 'business_hours',
-                    'description' => 'Response times may vary outside business hours.',
+                    'description' => 'Response times may vary outside standard business hours.',
                 ],
             ],
             'enquiry_types_intro' => [
@@ -821,11 +821,13 @@ return [
     ],
 
     'contact' => [
-        'phone' => '+263 000 000 000',
-        'whatsapp' => '+263 000 000 000',
-        'email' => 'hello@viptafoods.com',
-        'location' => 'Harare, Zimbabwe',
-        'business_hours' => 'Monday to Friday, 9am to 5pm',
+        'phone_us' => '+1 (240) 418-5331',
+        'phone_zim' => '+263 78 760 5189',
+        'phone' => '+263 78 760 5189',
+        'whatsapp' => '+263 78 760 5189',
+        'email' => 'info@viptafoods.com',
+        'location' => 'Harare, Zimbabwe / USA',
+        'business_hours' => 'Monday to Friday, 8am to 5pm',
         'enquiry_types' => [
             'Personal order',
             'Wholesale order',
