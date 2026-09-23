@@ -49,31 +49,73 @@
             </div>
 
             <div class="relative">
-                <figure class="relative mx-auto flex max-w-xl flex-col items-center">
-                    @if (filled($hero['image_badge'] ?? null))
-                        <figcaption
-                            class="relative z-10 max-w-md rounded-full border border-vipta-border/80 bg-vipta-paper/90 px-5 py-3 text-center text-sm font-bold uppercase tracking-[0.12em] text-vipta-green shadow-sm backdrop-blur">
+                @if (filled($hero['image_badge'] ?? null))
+                    <div class="mb-6 flex justify-center">
+                        <span
+                            class="rounded-full border border-vipta-border/80 bg-vipta-paper/90 px-5 py-2.5 text-center text-xs font-bold uppercase tracking-[0.14em] text-vipta-green shadow-sm backdrop-blur sm:text-sm">
                             {{ $hero['image_badge'] }}
-                        </figcaption>
-                    @endif
-                    <div
-                        class="-mt-3 flex h-[23rem] w-full items-center justify-center overflow-hidden sm:h-[29rem] sm:overflow-visible min-[900px]:h-[30rem]">
-                        <img src="{{ asset($hero['image'] ?? 'images/vipta/single-cookie.png') }}"
-                            alt="{{ $hero['image_alt'] ?? '' }}" width="1400" height="1050" fetchpriority="high"
-                            decoding="async"
-                            class="h-[26rem] w-auto max-w-[calc(100vw-2.5rem)] object-contain drop-shadow-[0_28px_42px_rgba(20,82,37,0.16)] sm:h-[38rem] sm:max-w-none min-[900px]:h-[40rem]">
-                    </div>
-                </figure>
-
-                @if (filled($hero['comparison'] ?? null))
-                    <div
-                        class="-mt-3 rounded-2xl border border-vipta-border bg-vipta-green px-5 py-4 text-center shadow-[var(--shadow-vipta-soft)] sm:-mt-5">
-                        <p class="text-xs font-bold uppercase tracking-[0.14em] text-vipta-gold">Health Comparison</p>
-                        <p class="mt-2 font-display text-2xl font-semibold leading-tight text-white sm:text-3xl">
-                            {{ $hero['comparison'] }}
-                        </p>
+                        </span>
                     </div>
                 @endif
+
+                <div
+                    class="rounded-3xl border border-vipta-border/80 bg-vipta-paper p-4 shadow-[var(--shadow-vipta-soft)] sm:p-6">
+                    <div
+                        style="display: flex; flex-direction: row; align-items: center; justify-content: space-between; gap: 0.75rem;">
+                        {{-- Left Card: Miracle Cookie --}}
+                        <div style="flex: 1 1 0%; min-width: 0;"
+                            class="group flex flex-col items-center rounded-2xl border border-vipta-border/60 bg-vipta-cream/50 p-3 transition-all duration-300 hover:border-vipta-green/30 hover:bg-white hover:shadow-md sm:p-4">
+                            <div
+                                class="relative flex aspect-square w-full items-center justify-center overflow-hidden rounded-xl bg-white/80 p-3 shadow-inner">
+                                <img src="{{ asset($hero['comparison_cookie_image'] ?? 'images/vipta/single-cookie.png') }}"
+                                    alt="{{ $hero['comparison_cookie_alt'] ?? '1 Miracle Breakfast Cookie' }}"
+                                    fetchpriority="high" decoding="async"
+                                    class="max-h-full max-w-full object-contain drop-shadow-[0_6px_12px_rgba(20,82,37,0.15)] transition-transform duration-300 group-hover:scale-105">
+                            </div>
+                            <div class="mt-3 flex flex-col items-center text-center">
+                                <span class="font-display text-xs font-bold text-vipta-green sm:text-base lg:text-lg">1
+                                    Miracle Cookie</span>
+                                <p class="mt-0.5 text-[10px] font-medium text-vipta-earth sm:text-xs">Nutrient-dense
+                                    breakfast</p>
+                            </div>
+                        </div>
+
+                        {{-- Equals Sign Divider --}}
+                        <div style="flex-shrink: 0; display: flex; align-items: center; justify-content: center;">
+                            <div
+                                class="flex h-9 w-9 items-center justify-center rounded-full bg-vipta-green text-lg font-bold text-vipta-gold shadow-md sm:h-12 sm:w-12 sm:text-2xl">
+                                =
+                            </div>
+                        </div>
+
+                        {{-- Right Card: 4 Slices Bread + 1 Egg --}}
+                        <div style="flex: 1 1 0%; min-width: 0;"
+                            class="group flex flex-col items-center rounded-2xl border border-vipta-border/60 bg-vipta-cream/50 p-3 transition-all duration-300 hover:border-vipta-green/30 hover:bg-white hover:shadow-md sm:p-4">
+                            <div
+                                class="relative flex aspect-square w-full items-center justify-center overflow-hidden rounded-xl bg-white/80 p-3 shadow-inner">
+                                <img src="{{ asset($hero['comparison_bread_egg_image'] ?? 'images/vipta/Bread and Egg.png') }}"
+                                    alt="{{ $hero['comparison_bread_egg_alt'] ?? '4 slices of bread and 1 egg' }}"
+                                    fetchpriority="high" decoding="async"
+                                    class="max-h-full max-w-full object-contain drop-shadow-[0_6px_12px_rgba(0,0,0,0.12)] transition-transform duration-300 group-hover:scale-105">
+                            </div>
+                            <div class="mt-3 flex flex-col items-center text-center">
+                                <span class="font-display text-xs font-bold text-vipta-green sm:text-base lg:text-lg">4
+                                    Bread Slices + 1 Egg</span>
+                                <p class="mt-0.5 text-[10px] font-medium text-vipta-muted sm:text-xs">Traditional breakfast
+                                    equivalent</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    {{-- Comparison Banner Below Images --}}
+                    <div
+                        class="mt-5 rounded-2xl border border-vipta-border bg-vipta-green px-4 py-3.5 text-center shadow-sm">
+                        <!--p class="text-[11px] font-bold uppercase tracking-[0.16em] text-vipta-gold">Health Comparison</p-->
+                        <p class="mt-1 font-display text-lg font-bold leading-snug text-white sm:text-xl md:text-2xl">
+                            1 Miracle Cookie = 4 Slices of Bread + 1 Egg
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -156,29 +198,29 @@
     </section>
 
     <!--section class="bg-vipta-green py-16 text-white lg:py-24">
-                <div class="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
-                    <x-site.section-heading :eyebrow="$impactPreview['eyebrow'] ?? ''" :heading="$impactPreview['heading'] ?? ''"
-                        :body="$impactPreview['body'] ?? ''" theme="dark" class="max-w-3xl" />
+                    <div class="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
+                        <x-site.section-heading :eyebrow="$impactPreview['eyebrow'] ?? ''" :heading="$impactPreview['heading'] ?? ''"
+                            :body="$impactPreview['body'] ?? ''" theme="dark" class="max-w-3xl" />
 
-                    <div class="mt-12 grid gap-5 md:grid-cols-3">
-                        @foreach (($impactPreview['items'] ?? []) as $item)
-                            <x-site.text-card :title="$item['title'] ?? ''" :body="$item['description'] ?? ''" variant="dark" />
+                        <div class="mt-12 grid gap-5 md:grid-cols-3">
+                            @foreach (($impactPreview['items'] ?? []) as $item)
+                                <x-site.text-card :title="$item['title'] ?? ''" :body="$item['description'] ?? ''" variant="dark" />
+                            @endforeach
+                        </div>
+                    </div>
+                </section-->
+
+    <!--section class="bg-vipta-sage py-16 lg:py-24">
+                <div class="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
+                    <x-site.section-heading :eyebrow="$testimonialIntro['eyebrow'] ?? ''" :heading="$testimonialIntro['heading'] ?? ''" align="center" />
+
+                    <div class="mt-12 grid gap-5 lg:grid-cols-3">
+                        @foreach ($testimonials as $testimonial)
+                            <x-site.testimonial-card :testimonial="$testimonial" />
                         @endforeach
                     </div>
                 </div>
             </section-->
-
-    <!--section class="bg-vipta-sage py-16 lg:py-24">
-            <div class="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
-                <x-site.section-heading :eyebrow="$testimonialIntro['eyebrow'] ?? ''" :heading="$testimonialIntro['heading'] ?? ''" align="center" />
-
-                <div class="mt-12 grid gap-5 lg:grid-cols-3">
-                    @foreach ($testimonials as $testimonial)
-                        <x-site.testimonial-card :testimonial="$testimonial" />
-                    @endforeach
-                </div>
-            </div>
-        </section-->
 
     <x-site.cta-section :heading="$finalCta['heading'] ?? ''" :body="$finalCta['body'] ?? ''"
         :primary-label="$finalCta['cta_label'] ?? 'Contact Us'" :primary-route="$finalCta['cta_route'] ?? 'contact'"
